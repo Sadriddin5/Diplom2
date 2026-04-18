@@ -1,0 +1,909 @@
+*{
+    margin: 0   ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.galery{
+width: 100%;
+   background-color: #F6EEDC;
+    padding-top: 2rem;
+
+     max-width: 1920px;
+    min-width: 375px;
+}
+.baner1{
+    position: relative;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 10%;
+padding-left: 8%;
+ max-width: 1920px;
+    min-width: 375px;
+    background-color: yellow;
+}
+.baner1 img{
+    z-index: 10 !important;
+     width: clamp(230px, 50vw, 824px);  
+ 
+     
+    height: auto;
+    display: block;
+}
+.baner1 button{
+    font-size: clamp(1rem, 4vw, 1.5rem);
+     background-color: #644735;
+     font-family: 'Geologica';
+     font-weight: 100;
+     border: none;
+     color: #EEE9E4;
+    height: clamp(20px, 6vh, 62px);
+    width: clamp(119px, 30vw, 400px);
+    margin-right: 0;
+}
+.slid1{
+    width: 100%;
+    max-height: 564px;
+    min-height: 170px;
+    height: 35.25rem;
+    margin-top: clamp(-125px, -8vw, -60px);
+    background: #F6EEDC;
+    border-top: 2px solid #C3B9AC;
+    border-bottom: 2px solid #C3B9AC;
+    padding-top: 30px ;
+    padding-bottom: 5px;
+    position: relative;
+    background-color: orange;
+}
+
+.sliderBlock{
+    margin-top: 10px;
+    background-color: transparent;
+position:absolute ;
+  margin-top: 60px;
+width: 100%;
+height: 443px;
+max-width: 1920px;
+min-width: 375px;
+min-height: 150px;
+
+}
+.sliderButs{
+ width: 136px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 10%; 
+    background-color: #344163;
+}
+.sliderButs hr{
+    height: 100%;
+    border: 1px solid #C3B9AC;
+    visibility: visible;
+}
+
+/**      SLIDER ***/
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  z-index: 20 !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #ADA99C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+@media (max-width: 480px) {
+.baner1{
+    display: flex;
+}
+.baner1 button{
+    margin-left: -100px;
+    font-size: 80ex;
+    font-family: 'Geologica';
+     font-weight: 100;
+}
+.sliderBlock{
+    height: 150px;
+}
+.slid1{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+    border-top: 1px solid #C3B9AC;
+    border-bottom: 0px solid transparent;
+}
+.slid1 hr{
+    margin-top: 168px;
+    width: 90%;
+    height: 0.5px;
+    border: none;
+    background-color: #C3B9AC;
+}
+.baner1 button{
+     width: clamp(119px, 20.75vw, 400px);
+    height: clamp(20px, 6vh, 62px);
+    width: 119px;
+    height: 20px;
+    font-size: 8px;
+    border: 0;
+    margin-top: -100px;
+    font-family: 'Geologica';
+     font-weight: 100;
+}
+.sliderButs{
+    height: 10px;
+    width: 36px;
+margin-top: -15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.sliderButs img{
+    height: 100%;
+    width: 4.24px;
+}
+.sliderButs hr{
+    visibility: hidden;
+    background-color: transparent;
+    border-color: transparent;
+}
+.sliderBlock{
+margin-top: 5px;
+
+}
+
+
+
+}
+@media (max-width:1519px)
+{
+    .baner1 button{
+        position: absolute;
+    font-size: clamp(1rem, 1.5vw, 2.3rem);
+    height: clamp(20px, 4vh, 62px);
+    width: clamp(119px, 20vw, 400px);
+    margin-top: -110px; 
+    margin-left: clamp(250px, 46vw, 700px);
+}
+}
+@media (max-width:768px)
+{
+    .baner1 button{
+    font-size: clamp(1rem, 1.5vw, 2.3rem);
+    height: clamp(20px, 4vh, 62px);
+    width: clamp(119px, 40vw, 400px);
+    margin-top: -120px;
+}
+}
+.from1977 {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 360px;
+    padding-left: 8%;
+    padding-right: 10%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #F6EEDC;
+    border-bottom: 2px solid #C3B9AC;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.left77 {
+    
+    min-width: 280px;
+    width: fit-content;
+}
+
+.right77 { 
+    flex: 1;
+    min-width: 280px;
+    padding-top: 2%; 
+    padding-left: clamp(1rem, 8vw, 8rem);
+}
+
+.right77 p {
+    font-family: 'ForumFont';
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
+    width: 100%;
+    max-width: 502px;
+    color: #3B3534;
+    margin-bottom: 2rem;
+}
+
+.left77 h2 {
+    font-family: 'logoFont';
+    color: #344163;
+    font-size: clamp(2.5rem, 8vw, 8.9rem);
+}
+h2 {
+    font-family: 'logoFont';
+    color: #344163;
+    font-size: clamp(2.5rem, 8vw, 8.9rem);
+}
+.left77 p {
+    font-family: 'ForumFont';
+    font-size: clamp(0.85rem, 3vw, 4rem);
+     white-space: nowrap; 
+     color: #4D3410;
+}
+
+.liniyaBloc {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.liniyaBloc img {
+    width: clamp(170px, 20vw, 340px);
+    height: auto;
+}
+
+.liniyaBloc h6 {
+    font-family: 'logoFont';
+
+     color: #4D3410;
+    font-size: clamp(0.813rem, 2vw, 2rem);
+}
+.endingKareer {
+    white-space: nowrap;
+}
+
+@media (max-width: 850px) {
+    .right77 {
+        padding-left: 0;
+    }
+    .from1977{
+        gap: 2rem;
+    }
+.endingKareer {
+        white-space: normal;
+        word-break: break-word;
+        max-width: 100px; /* или auto */
+    }
+}
+@media (max-width: 380px) {
+    .liniyaBloc {
+        gap: 0.5rem;
+    }
+    
+    .endingKarer {
+        white-space: normal;
+        word-break: keep-all;  /* или break-word */
+        max-width: 80px;
+    }
+}
+
+
+
+
+
+
+.bio{
+    padding-left: 8%;
+    padding-right: 10px;
+    min-width: 375px;
+    max-width: 1920px;
+    height: fit-content;
+
+        background-color: #F6EEDC;
+    width: 100%;
+}
+
+.bio h2{
+    font-family: 'logoFont';
+    font-size: clamp(2.4375rem, 7.8125vw, 6.9375rem);
+       
+} 
+
+@media (min-width:769px){
+    .bio h2{
+    font-family: 'logoFont';
+    font-size: clamp(2.4375rem, 7.8125vw, 6.9375rem);
+       padding-top: 2rem;
+       text-align: center;
+         margin-bottom: -7%;
+       color: #344163;
+    
+      
+    margin-left: 7rem;
+}
+}
+.bio img{
+    width: clamp(119px, 25vw, 404px);
+height: clamp(9.875rem, 29.25vw, 30.5rem);
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.oleg{
+    display: flex;
+    
+}
+.oleg p{
+    font-family: 'ForumFont';
+    font-size: clamp(0.688rem, 2vw, 1.5rem);
+}
+.rightbio{
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+width: clamp(238px, 80.5vw, 717px);
+    margin-left: 8%;
+}
+.rightbio p{
+    width: 90%;
+}
+.bio2{
+    margin-top: 2rem;
+}   
+.oleg button{
+    font-family: 'Geologica';
+     font-weight: 100;
+    background-color: #644735;
+    color: #FFFFFF;
+    width: clamp(128px, 20.75vw, 396px);
+    height: clamp(27px, 6vh, 73px);
+    border: none;
+    font-size: clamp(11px, 1.67vw, 32px);
+    margin-top: 4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.bio2 hr{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    border: 0;
+
+}
+
+.hroleg1{
+    
+height: clamp(9.875rem, 29.25vw, 30.5rem);
+margin-top: 2rem;
+
+border: #C3B9AC 0.5px solid;
+    background-color: #C3B9AC;
+}
+
+/* Второй hr */
+.hroleg2 {
+height: clamp(29rem, 32.25vw, 39.5rem);
+border: #C3B9AC 0.5px solid;
+    background-color: #C3B9AC;
+}
+
+@media (min-width: 375px) and (max-width:1020px) {
+    .oleg button{
+      width: clamp(128px, 20.75vw, 396px);
+    height: clamp(27px, 4vh, 73px);
+    }
+}
+@media (min-width: 480px) and (max-width:768px) 
+{
+    .bio{
+    }
+    .hroleg1{
+        height: 0;
+        width: 0;
+        visibility: hidden
+    }   
+    .hroleg2{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    };
+    .oleg img{
+        margin-left: 0;
+    }
+    .oleg h2{
+    text-align: center;
+         margin-bottom: -7%;
+    }
+    .rightbio{
+        margin-top: 0;
+    }
+
+}
+@media(max-width:479px){
+    .bio{
+        padding-right: 10%;
+    }
+     .hroleg1{
+        height: 0;
+        width: 0;
+        visibility: hidden
+    }   
+    .hroleg2{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    };
+    .oleg img{
+        margin-left: 0;
+    }
+     .rightbio{
+        margin-top: 25%;
+        display: flex;
+        margin-left: 0;
+        justify-content: end;
+        align-items: end;
+    }
+    .oleg button{
+        margin-top: 5%;
+    }
+    .bio1{
+    }
+    .bio2{
+      margin-left: -102%;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+    .bio2 hr{
+        height: 65px;
+        width: 0.2px;
+        visibility: visible;
+        border: #C3B9AC 0.2px solid;
+        background-color: #C3B9AC;
+    }
+    .bio2 p{
+ 
+        width: 95%;
+    };
+}
+
+
+hr{
+    border: #C3B9AC 0.2px solid;
+        background-color: #C3B9AC;
+}
+
+.creativity{
+    min-width: 360px;
+    max-width: 1920px;
+    width: 100%;
+    height: clamp(427px, 44vw, 797px);
+    margin-top: 3%;
+    padding-left: clamp(16px, 8%, 8%);
+    padding-right: clamp(16px, 10%, 10%);
+
+}
+.topAndBot{
+    width: clamp(926px, 84.3vw, 1550px);
+    height: 0px;
+    border: 1px solid #C3B9AC;
+
+}
+.mainCreat{
+    display: flex;
+  height: clamp(427px, 41vw, 787px); 
+}
+
+.h2Creativity{
+   
+    padding: clamp(10px, 10%, 20px);
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+ width: clamp(119px, 29.4vw, 469px);
+
+}
+.h2CreatMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-right: 2px solid #C3B9AC;
+   
+
+}
+.h2CreatMain hr{
+    border: 1px solid #C3B9AC;
+   height: clamp(100px, 38.2vw, 613px);
+    
+}
+.h2Creativity h2{
+    font-family: 'logoFont';
+    color: #344163;
+    font-size: clamp(2.4375rem, 5.8125vw, 6.9375rem);     
+} 
+.h2Creativity p{
+    font-family: 'ForumFont';
+    font-size: clamp(0.9rem, 1.7vw, 1.5rem);
+    
+    margin-top: clamp(10px, 5.3vh, 4rem);
+    color: #3B3534;
+   
+}
+.h2Creativity button{
+    font-family: 'Geologica';
+     font-weight: 100;
+    background-color: #644735;
+    color: #FFFFFF;
+    width: clamp(153px, 20.75vw, 429px);
+    height: clamp(25px, 6vh, 65px);
+    border: none;
+    font-size: clamp(14px, 1.67vw, 32px);
+    margin-top: clamp(10px, 5.3vh, 4rem);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.leftCreate{
+    display: flex;
+    justify-content: space-between;
+    
+width: clamp(238px, 55.5vw, 858px);
+    
+}
+
+.leftCreate img{
+  width: clamp(127px, 22vw, 370px);
+  height: clamp(153px, 28vw, 482px);
+   
+}
+.createCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+    border-right: 2px solid #C3B9AC;
+  padding-top: clamp(5%, 5vw, 10%);
+gap: clamp(2px, 1.5vw, 10px);
+width: clamp(119px, 27.3vw, 429px);
+}
+.createCard p{
+    text-align: start;
+    width: clamp(119px, 20vw, 369px);
+    
+ font-size: clamp(11px, 1.25vw, 24px);
+  font-family: 'ForumFont';
+}
+.createCard h6{
+  text-align: start; 
+  font-size: clamp(11px, 1.25vw, 24px);
+  font-family: 'ForumFont';
+  width: clamp(119px, 20.4vw, 369px);
+}
+.tecPic{
+    color: #B58641;
+}
+ @media (max-width: 1519px)  {
+    .hroleg2{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    .createCard{
+      padding-top: clamp(5%, 2vw, 10%);
+    }
+    .h2Creativity p{
+        margin-top: clamp(10px, 1vw, 4rem);
+    }
+    .h2Creativity button{
+        margin-top: clamp(10px, 1vw, 4rem);
+        height: clamp(25px, 4vh, 65px);
+    }
+    
+ }
+  @media (max-width: 1100px){
+ .createCard{
+      padding-top: clamp(2%, 1vw, 7%);
+    }
+    .h2Creativity p{
+        margin-top: clamp(10px, 1vw, 4rem);
+    }
+    .h2Creativity button{
+        margin-top: clamp(10px, 1vw, 4rem);
+    }
+   .h2Creativity p{
+    
+    font-size: clamp(0.9rem, 1.7vw, 1.5rem);
+    }
+    .topAndBot{
+    width: clamp(325px, 84.5vw, 1000px);
+}
+    
+  }
+    @media (max-width: 768px){
+        
+        .leftCreate{
+            border-left: 2px solid #C3B9AC;
+            flex-direction: column;
+            height: fit-content;
+        }
+        .creativity{
+        height: fit-content;
+        }
+        .mainCreat{
+            height: fit-content;
+            border-left: 2px solid #C3B9AC;
+            display: flex;
+
+
+        }
+        .topCard{
+            border-bottom: 1px solid #C3B9AC;
+        }
+        .topAndBot{
+            width: 100%;
+        }
+        .h2CreatMain hr{
+            visibility: hidden;
+            height: 0;
+            width: 0;
+        }
+        .h2Creativity{       
+        width: clamp(119px, 43vw, 400px);
+        }
+        .createCard{
+            border-right: 0;
+            padding-left: 5%;
+            gap: clamp(2px, 1vw, 10px);
+            width: 100%;
+           
+        }
+      
+        .h2Creativity p{
+            font-size: clamp(0.9rem, 1.7vw, 1.5rem);
+        }
+        .h2Creativity{
+            padding: 0;
+            border-left: 0;
+        }
+        .h2CreatMain{
+            border-left: 0;
+            border: 0;
+        }
+        .h2Creativity p{
+        margin-top: clamp(10px, 1vw, 4rem);
+    }
+    .h2Creativity button{
+        margin-top: clamp(10px, 1vw, 4rem);
+        height: clamp(25px, 4vh, 65px);
+    }
+    .h2CreatMain hr{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    .createCard{
+        padding-top: 10%;
+    }
+    .createCard h6{
+        margin-left: 0;
+width: clamp(127px, 22vw, 370px);
+    }
+    .createCard p{
+        
+width: clamp(127px, 22vw, 370px);
+    }
+    }
+   @media (max-width:480px){
+    .mainCreat{
+        border: 0;
+    }
+     .h2Creativity p{
+        font-size: clamp(11px, 3vw, 15px);
+    }
+      .museumH2 p {
+    line-height: clamp(1.2, 2vw, 1.5);
+    margin-top: 0;
+  }
+
+   }
+
+   .SecMuseum{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    width: 100%;
+    min-width: 375px;
+    max-width: 1920px;
+    padding-left: 8%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .SecMuseum hr{
+    height: clamp(250px, 700vh, 577px);
+   }
+.museum863{
+     width: clamp(141px, 45vw, 863px);
+    height: clamp(265px, 27vw, 519px);
+    background-color: #ADA99C;
+}
+button{
+    border-radius: 5px;
+}
+.museumH2{
+  
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ width: clamp(119px, 29.4vw, 469px);
+
+
+}
+
+.museumH2 h2{
+    font-family: 'logoFont';
+    color: #344163;
+    font-size: clamp(2.4375rem, 5.8125vw, 6.9375rem);     
+} 
+.museumH2 p{
+    font-family: 'ForumFont';
+    font-size: clamp(0.9rem, 1.7vw, 1.5rem);
+    width: clamp(155px, 20vw, 387px);
+    margin-top: clamp(10px, 5.3vh, 4rem);
+    color: #3B3534;
+   
+}
+.museumH2 button{
+     font-family: 'ForumFont';
+    background-color: #644735;
+    color: #FFFFFF;
+    width: clamp(153px, 20.75vw, 429px);
+    height: clamp(25px, 6vh, 65px);
+    border: none;
+    font-size: clamp(14px, 1.67vw, 32px);
+    margin-top: clamp(10px, 5.3vh, 4rem);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.h2MuseyMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+.museumH2 p{
+    width: clamp(208px, 25.16vw, 387px);
+}
+.h2MuseyMain hr{
+    border: 1px solid #C3B9AC;
+   height: clamp(100px, 38.2vw, 613px);
+    
+}
+@media (max-width: 1519px)  {
+   .SecMuseum {
+    margin-right: 0;
+   }
+   .SecMuseum hr{
+    height: clamp(250px, 700vh, 577px);
+   }
+   .museumH2 p{
+    line-height: clamp(1.2, 2vw, 1.5);
+       margin-top: clamp(1px, 0.1vw, 4rem);
+   }
+ 
+   
+.museum863{
+     width: clamp(141px, 30vw, 863px);
+    height: clamp(265px, 27vw, 519px);
+}
+   .museumH2 button{
+       margin-top: clamp(10px, 1vw, 4rem);
+       height: clamp(25px, 5vh, 65px);
+   }
+    .SecMuseum hr{
+    height: clamp(250px, 60vh, 577px);
+   }
+   .museumH2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+   }
+}
+ @media (max-width: 1100px){
+   .SecMuseum hr {
+    height: clamp(200px, 20vh, 577px);
+}
+       .SecMuseum {
+    margin-right: 0;
+   }
+     .SecMuseum hr{
+    height: clamp(250px, 300vh, 577px);
+   }
+
+    .SecMuseum hr{
+    height: clamp(250px, 50vh, 577px);
+   }
+.createCard{
+     padding-top: clamp(2%, 1vw, 7%);
+   }
+    .museumH2 {
+   
+    padding-bottom: 2%;
+}
+   .museumH2 p{
+    
+    line-height: clamp(1, 1vw, 1.5);
+       margin-top: clamp(10px, 1vw, 4rem);
+   }
+   .museumH2 button{
+       margin-top: clamp(10px, 1vw, 4rem);
+   }
+ 
+}
+ @media (max-width: 768px){
+         .museumH2 button{
+       margin-top: clamp(10px, 1vw, 4rem);
+       height: clamp(25px, 4.6vh, 65px);
+   }
+      .SecMuseum {
+    margin-right: 0;
+    justify-content: endcd  ;
+   }
+   
+.museumH2 div{
+}
+.museumH2{
+    width: fit-content;
+}
+/* .museumH2 p{
+    
+    line-height: clamp(0.8, 1vw, 1.5);
+    width: clamp(155px, 10vw, 387px);
+    font-size: clamp(0.9rem, 0.5vw, 1.5rem);
+    margin-top: clamp(10px, 5.3vh, 4rem);
+} */
+}
+
+
+   @media (max-width:480px){
+    
+     .SecMuseum{
+        gap: clamp(2%, 20vw, 5%);
+     }
+.museumH2 p{
+ width: clamp(155px, 40vw, 387px);
+    font-size: clamp(11px, 2vw, 24px); /* ← было 1vw, стало 2vw — 11px наступит раньше */
+    margin-top: clamp(10px, 2vh, 4rem);
+    line-height: clamp(0.8, 1vw, 1.5);
+}
+.SecMuseum hr{
+    height: clamp(250px, 30vh, 577px);
+   }
+ 
+   }
+   
+.h2MuseyMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.h2MuseyMain hr{
+    border: 1px solid #C3B9AC;
+   height: clamp(100px, 38.2vw, 613px);
+    
+}

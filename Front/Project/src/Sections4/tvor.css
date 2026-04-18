@@ -1,0 +1,327 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.CreativitySec {
+    width: 100%;
+}
+
+.CreativitySec hr {
+    border: 1px solid #C3B9AC;
+    margin-bottom: 4%;
+}
+
+.obzorCreat {
+    width: clamp(325px, 78vw, 1480px);
+    height: clamp(144px, 21vw, 403px);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0 auto;
+    border-bottom: 1px solid #C3B9AC;
+
+    gap: clamp(10px, 2vw, 20px);
+}
+
+.obzorCreat hr {
+    height: clamp(131px, 17.8vw, 341px);
+    border: 1px solid #C3B9AC;
+}
+
+.obzorMain {
+    width: clamp(310px, 65vw, 1234px);
+   height: clamp(123px, 17.2vw, 331px);
+}
+
+.obzorCreat p {
+    font-family: 'ForumFont';
+    font-size: clamp(11px, 1.6vw, 30px);
+    color: #3B3534;
+}
+
+.obzorCreat h1 {
+    font-family: 'Quvality';
+    font-size: clamp(27px, 3.3vw, 64px);
+    color: #B58641;
+}
+
+.obzor {
+    align-items: end;
+    justify-content: center;  
+    height: clamp(144px, 21vw, 373px);
+}
+
+@media(max-width:1519px){
+.obzorCreat{
+    margin-bottom: 3.5%;
+}
+}
+.evolut{
+    height: clamp(79px, 13vw, 250px);
+   width: clamp(325px, 80vw, 1480px);
+    background-color: orange;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: start;
+}
+.evolut p{
+    font-family: 'logoFont';
+  font-size: clamp(36px, 6.67vw, 128px);
+    color: #344163;
+}
+
+/* Базовые стили (ПК) — НЕ ТРОГАЮ */
+.BlockTvorc {
+    width: clamp(325px, 80vw, 1480px);
+    margin: 0 auto;
+    border-top: 1px solid #C3B9AC;
+    border-bottom: 1px solid #C3B9AC;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.tvor1 {
+    width: 615px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.tvorBloc {
+    width: 615px;
+    height: 217px;
+    display: flex;
+    align-items: end;
+    background-image: linear-gradient(#ADA99C, #ADA99C, #ADA99C, #F6EEDC, #F6EEDC);
+}
+
+.tvorBloc h1 {
+    font-size: 48px;
+    color: #4D3410;
+    font-family: 'Geologica';
+}
+
+.tvorBloc h3 {
+    font-size: 64px;
+    color: #B58641;
+    font-family: 'Quvality';
+}
+
+.tvorName {
+    width: 710px;
+    height: 78px;
+    display: flex;
+    margin-right: -105px;
+    justify-content: space-between;
+}
+
+.tvorText {
+    height: 108px;
+    width: 600px;
+}
+
+.tvorText p {
+    font-family: 'Forumfont';
+    font-size: 30px;
+}
+
+.TvorTopMain {
+    width: 1370px;
+    justify-content: space-between;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+/* ===== АДАПТИВ (clamp + медиазапросы) ===== */
+
+/* Общие адаптивные размеры */
+.BlockTvorc {
+    width: clamp(325px, 80vw, 1480px);
+    padding-top: clamp(10px, 2%, 2%);
+    padding-bottom: clamp(10px, 2%, 2%);
+}
+
+.tvor1 {
+    width: clamp(280px, 40vw, 615px);
+    align-items: center;
+}
+
+.tvorBloc {
+    width: clamp(280px, 40vw, 615px);
+    height: clamp(100px, 15vw, 217px);
+}
+
+.tvorBloc h1 {
+    font-size: clamp(27px, 3vw, 48px);
+}
+
+.tvorBloc h3 {
+    font-size: clamp(32px, 4vw, 64px);
+}
+
+.tvorName {
+    width: clamp(320px, 45vw, 630px);
+    height: auto;
+    
+}
+
+.tvorText {
+    height: auto;
+    width: clamp(260px, 38vw, 600px);
+}
+
+.tvorText p {
+    font-size: clamp(11px, 2vw, 30px);
+}
+
+.TvorTopMain {
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    gap: clamp(20px, 4vw, 40px);
+    justify-content: center;
+}
+
+/* Переход на 1 колонку */
+@media (max-width: 1200px) {
+    .TvorTopMain {
+        justify-content: center;
+    }
+    
+    .tvor1 {
+        width: clamp(300px, 70vw, 500px);
+    }
+    
+    .tvorBloc {
+        width: 100%;
+    }
+    
+    .tvorName {
+        width: 100%;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+    
+    .tvorText {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tvor1 {
+        width: 100%;
+    }
+    
+    .tvorBloc {
+        height: auto;
+        min-height: clamp(80px, 15vw, 120px);
+    }
+    
+    .tvorName {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .tvorBloc h1 {
+        font-size: clamp(24px, 5vw, 32px);
+    }
+    
+    .tvorBloc h3 {
+        font-size: clamp(28px, 5vw, 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .tvorBloc h1 {
+        font-size: 20px;
+    }
+    
+    .tvorBloc h3 {
+        font-size: 24px;
+    }
+    
+    .tvorText p {
+        font-size: 14px;
+    }
+}
+/*
+
+.BlockTvorc{ 
+   width: clamp(325px, 80vw, 1480px);
+    margin: 0 auto; 
+    border-top: 1px solid #C3B9AC;
+    border-bottom: 1px solid #C3B9AC;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.tvor1{ 
+    width: 615px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.tvorBloc{
+    width: 615px;
+    height: 217px;
+    display: flex;
+    align-items: end;
+    background-image: linear-gradient(#ADA99C, #ADA99C,  #ADA99C, #F6EEDC, #F6EEDC);
+}
+.tvorBloc h1{
+    font-size: 48px;
+    color: #4D3410;
+    font-family: 'Geologica';
+    
+}
+.tvorBloc h3{
+    font-size: 64px;
+    color: #B58641;
+    font-family: 'Quvality';
+}
+.tvorName{ 
+    width: 710px;
+    height: 78px;
+    display: flex;
+    margin-right: -105px;
+    justify-content: space-between;
+}
+.tvorText{
+    height: 108px;
+    width: 600px;
+}
+.tvorText p{
+    font-family: 'Forumfont';
+    font-size: 30px; 
+}
+.TvorTopMain{
+    
+    width: 1370px;
+    justify-content: space-between;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+*/
+
+.block1{
+    width: 719px;
+    background-color: orange;
+    height: 254px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -10px 0;
+    margin: 0 auto;
+}
+.block1 div{
+    height: 100%;
+    width: 100%;
+    background-color: #615b4d;
+}
