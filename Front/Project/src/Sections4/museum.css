@@ -1,0 +1,113 @@
+*{
+    margin: 0   ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.concept{
+    display: flex;
+    width: 100%;
+    height:659px; 
+    border-top: 1px solid rgba(207, 206, 204, 1);
+}
+.conceptMain{
+    width: 1480px;
+    height: 100%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(207, 206, 204, 1);
+
+
+}
+.Museumimg1{
+    height: 100%;
+    width: 863px;
+    background-color: rgba(173, 169, 156, 1);
+}
+.MuseumH2{
+    width: 552px;
+    height: 494px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.MuseumH2 h1{
+    font-family: 'Geologica';
+    color: rgba(52, 65, 99, 1);
+    line-height: 72%;
+    font-size: 96px;
+    font-weight: 600; 
+height: fit-content;
+}
+.MuseumH2 p{
+    
+    font-family: 'Geologica';
+    color: rgba(59, 53, 52, 1);
+    font-weight: 300;
+    line-height: 120%;
+    font-size: 30px; 
+}
+.concept2{ 
+    width: 1480px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(207, 206, 204, 1);
+    margin-bottom: 226px;
+    padding-bottom: 20px;
+}
+.concept2H2 {
+    height: 148px; 
+    width: 100%;
+}
+.concept2H2 h1{
+    height: 148px; 
+    width: 100%;
+    color: rgba(181, 134, 65, 1); 
+    font-weight: 600;
+    font-family: 'Geologica';
+    display: flex;
+    align-items: center;
+    line-height: 254%;
+    font-size: 64px;
+}
+.museumButton{
+    height: 423px; 
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.museumButton section{
+    height: 423px;
+    width: 743px;
+    background-color: rgba(173, 169, 156, 1);
+}
+.museumButton div{
+width: 617px;
+height: 396px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.museumButton button{
+    width: 370px;
+    height: 61px;
+    background-color: rgba(100, 71, 53, 1);
+    font-family: 'Geologica';
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+}
+.museumButton P{
+    font-size: 30px;
+    font-family: 'Geologica';
+    font-weight: 300;
+    line-height: 110.00000000000001%;
+    color: rgba(59, 53, 52, 1);
+
+}

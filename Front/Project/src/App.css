@@ -5,16 +5,14 @@
     box-sizing: border-box;
 }
 
-.headerSec {
+.headerMain {
     min-height: 105px;
-    width: 100%;
+    width: clamp(325px, 80vw, 1480px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F6EEDC;
-    border-bottom: 1px solid #C3B9AC;
-   padding-left:  8%;
-   padding-right: 10%;
+    background-color: #FFFFFF ;
+margin: 0 auto;
 
      max-width: 1920px;
     min-width: 375px;
@@ -22,6 +20,12 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 100;
+}
+.headerSec{
+    height: fit-content;
+    
+    border-bottom: 1px solid #C3B9AC;
+    width: 100%;
 }
 
 .logo {

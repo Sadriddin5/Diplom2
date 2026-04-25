@@ -54,16 +54,14 @@ export default function Tvorchestvo(){
             </div>
             
             <div className="evolut">
-                <p>Эволюция художественного стиля</p>
+                <p>Эволюция <br /> художественного стиля</p>
             </div>
-            <div className="BlockTvorc">
+            {/* <div className="BlockTvorc">
                 <div className="TvorTopMain">
                     <div className="tvor1">
-                        <div className="tvorBloc">
-                        <div className="tvorName">
-                            <h1>Vulputate eget</h1> <h3>1970-1990</h3>
-                        </div>
-                    </div>
+                    <div className="tvorBloc"></div>
+                    <div className="tvorName">
+                            <h1>Vulputate eget</h1> <h3>1970-1990</h3></div>
                     <div className="tvorText">
                       <p>
                           Vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
@@ -73,36 +71,10 @@ export default function Tvorchestvo(){
                     </div>
                      <div className="tvor1">
                         <div className="tvorBloc">
-                        <div className="tvorName">
+                    </div>
+                    <div className="tvorName">
                             <h1>Vulputate eget</h1> <h3>1970-1990</h3>
                         </div>
-                    </div>
-                    <div className="tvorText">
-                      <p>
-                          Vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
-                        justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-                      </p>
-                    </div>
-                    </div>
-                     <div className="tvor1">
-                        <div className="tvorBloc">
-                        <div className="tvorName">
-                            <h1>Vulputate eget</h1> <h3>1970-1990</h3>
-                        </div>
-                    </div>
-                    <div className="tvorText">
-                      <p>
-                          Vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
-                        justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-                      </p>
-                    </div>
-                    </div>
-                     <div className="tvor1">
-                        <div className="tvorBloc">
-                        <div className="tvorName">
-                            <h1>Vulputate eget</h1> <h3>1970-1990</h3>
-                        </div>
-                    </div>
                     <div className="tvorText">
                       <p>
                           Vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
@@ -111,11 +83,226 @@ export default function Tvorchestvo(){
                     </div>
                     </div>
                 </div>
-            </div>
-            <div className="block1">
-                <div></div>
-            </div>
+                 <div className="TvorTopMain">
+                    <div className="tvor1">
+                    <div className="tvorBloc"></div>
+                    <div className="tvorName">
+                            <h1>Vulputate eget</h1> <h3>1970-1990</h3></div>
+                    <div className="tvorText">
+                      <p>
+                          Vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
+                        justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                      </p>
+                    </div>
+                    </div>
+                     <div className="tvor1">
+                        <div className="tvorBloc">
+                    </div>
+                    <div className="tvorName">
+                            <h1>Vulputate eget</h1> <h3>1970-1990</h3>
+                        </div>
+                    <div className="tvorText">
+                      <p>
+                          Vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
+                        justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                      </p>
+                    </div>
+                    </div>
+                </div>
+            </div> */}
+     
         </section>
+        <section className='jivopis'>
+            <div className="tecnicue">  
+                <h1>Техники и методы</h1>
+            </div>
+            <div className="jivopisMain">
+                <div className="jivopis1">
+                    <div></div>
+                   <section>
+                     <h1>Масляная живопись</h1>
+                    <p>Основная техника работы художника. 
+                        Многослойное письмо позволяет достигать 
+                        глубины цвета и богатства фактуры.
+                    </p>
+                   </section>
+                    
+                </div>
+                  <div className="jivopis1">
+                    <div></div>
+                   <section>
+                     <h1>Графика</h1>
+                    <p>Рисунки углем, сангиной, пастелью.
+                         Графические работы отличаются 
+                         выразительностью линии и экономией 
+                         художественных средств.
+                    </p>
+                   </section>
+                    
+                </div>
+                  <div className="jivopis1">
+                    <div></div>
+                   <section>
+                     <h1>Скульптура</h1>
+                    <p>Работа с бронзой и камнем. Скульптурные 
+                        композиции дополняют живописные серии, 
+                        воплощая те же философские идеи в 
+                        трехмерной форме.
+                    </p>
+                   </section>
+                    
+                </div>
+            </div>
+         
+        </section>
+           <div className="academicPicture">
+                <h1>
+                    Академический рисунок
+                </h1>
+                <div className="academText">
+                    <p>
+                    Академический рисунок — это всегда светотеневая разработка композиции. 
+                    При его ведении важно уяснить: по мере наложения штриховки пятно
+                     темнеет и умозрительно сжимается, а рядом лежащее светлое — увеличивается
+                     
+                </p>
+                <p>Первоначальный контур — всего лишь схема. К линии в академическом рисунке нужно обращаться
+                     в последнюю очередь, когда светотеневая структура уже решена.</p>
+                </div>
+            </div>
+             <div className="academicPicture">
+                <h1>
+              Классический рисунок
+                </h1>
+                <div className="academText">
+                    <p>
+                   Его основа — это пластика линии, но, чтобы ею точно выявить форму, рисунок начинается с трёхмерной конструкции пространства и ведется так, как это делают скульпторы: берется каменный блочок и схематично обрабатывается («болванка»), а затем «отсекается всё лишнее».
+                </p>
+                <p>
+                    Таким же методом ведётся и классический рисунок, в котором штриховка играет второстепенную роль помощника живой, движущейся, меняющей свою пластику линии.
+                </p>
+                </div>
+            </div>
+              <div className="academicPicture">
+                <h1>
+                   Натюрморт как жанр
+                </h1>
+                <div className="academText">
+                    <p>
+                   Натюрморт — это особый жанр. Олег считает, что выставить натюрморт — это очень серьёзный и ответственный шаг для автора: предстать перед зрителем в образе «голого короля». Натюрморт, как зеркало, отражает степень мастерства автора, которую может проверить зритель.
+                </p>
+                <p>Важно проанализировать каждую композицию на предмет того, как решена идея основными пластическими средствами. Такая критика не унизительна для автора, она касается не того, «что» изображено, а только того, «как» изображено.</p>
+                </div>
+            </div>
+            <div className="themesAnd">
+                <h1>
+                    Темы <br /> и направления
+                </h1>
+                <div className="themeMain">
+                    <div className="theme1">
+                        <div>
+                            <h3>
+                                Природа <br /> Балтийского побережья
+                            </h3>
+                            <p>Морские пейзажи, изменчивое небо,
+                                игра света на волнах — постоянные 
+                                темы в творчестве художника.</p>
+                        </div>
+                    </div>
+                    <div className="theme1">
+                        <div>
+                            <h3>
+                                Природа <br /> Балтийского побережья
+                            </h3>
+                            <p>Морские пейзажи, изменчивое небо,
+                                игра света на волнах — постоянные 
+                                темы в творчестве художника.</p>
+                        </div>
+                    </div>
+                    <div className="theme1">
+                        <div>
+                            <h3>
+                                Природа <br /> Балтийского побережья
+                            </h3>
+                            <p>Морские пейзажи, изменчивое небо,
+                                игра света на волнах — постоянные 
+                                темы в творчестве художника.</p>
+                        </div>
+                    </div>
+                    <div className="theme1">
+                        <div>
+                            <h3>
+                                Природа <br /> Балтийского побережья
+                            </h3>
+                            <p>Морские пейзажи, изменчивое небо,
+                                игра света на волнах — постоянные 
+                                темы в творчестве художника.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="vliyanye">
+                <h1>
+                    Влияние  <br />
+на современное искусство
+                </h1>
+            </div>
+            <div className="Shedevr">
+                <div className="shedevrH2">
+                    <h2>Искусство Глёз</h2>
+                    <p>Искусство сияющей Любви</p>
+                </div>
+               <div className="shedevrContentMain">
+                 <div className="shedevrContent1">
+                    <p>Олег Мелехов основал новое направление в искусстве третьего тысячелетия — <br />
+                        «Искусство Глёз». Искусство красоты и добра сочетает в себе гармонию чистого 
+                        цвета, ясность <br />
+                        композиционного строя и изысканную пластику форм. <br />
+                        Художник поднимает живописное звучание своих произведений до высокой 
+                        степени гармонии, <br />с высот которой утончённая энергетика картин отвечает благодарным 
+                        свечением, сияя светом, исходящим изнутри.</p>
+                </div>
+                <div className="shedevrContent2">
+                    <p>
+                        Творчество О.А. Мелехова оказало значительное влияние на развитие 
+                        современного искусства Калининградской области и шире — на российскую художественную школу.
+                    </p>
+                    <p>
+                        Его работы стали примером органичного синтеза академических традиций и современных художественных
+                         поисков. Многие молодые художники отмечают влияние его подхода к цвету, композиции и философскому 
+                         содержанию произведений на их собственное творчество.
+                    </p>
+                    <p>
+                        Особую ценность представляет педагогическая деятельность художника. Проводимые им мастер-классы и 
+                        пленэры помогают
+                         новому поколению художников осваивать профессиональное мастерство и развивать собственный 
+                         творческий язык.
+                    </p>
+                    <p>
+                        Создание музея в Светлогорске призвано не только сохранить творческое наследие О.А. Мелехова, 
+                        но и стать центром художественного образования и культурной жизни региона.
+                    </p>
+
+                </div>
+               </div>
+            </div>
+            <div className="poznakomtes">
+                <div className="helloMain">
+                    <div className="HelloH1">
+                    <h1>Познакомьтесь с работами художника</h1>
+                </div>
+                <div className="Hellop">
+                 <p>
+                    Посетите виртуальную галерею, чтобы увидеть полную коллекцию произведений О.А. Мелехова
+                 </p>
+                </div>
+                <div className="hellobuts">
+                    <button>Открыть галерею</button>
+                    <button>Полная коллекция</button>
+                </div>
+            </div>
+            
+            </div>
         </>
     )
 }

@@ -18,6 +18,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
            <section className='headerSec'>
+            <div className="headerMain">
+              
         <div className="logo">
           <h2>Олег Мелехов</h2>
           <p>Заслуженный художник России</p>
@@ -32,11 +34,12 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
           <Link to="/galery" onClick={closeMenu}>Галерея</Link>
           <Link to="/merch" onClick={closeMenu}>Мерч</Link>
           <Link to="/bio" onClick={closeMenu}>Биография</Link>
-          <Link to="/tvor" onClick={closeMenu}>Творчество</Link>
-          <Link to="/museum" onClick={closeMenu}>Музей</Link>
+          <Link to="/coll" onClick={closeMenu}>Коллекция</Link>
+          <Link to="/mus" onClick={closeMenu}>Музей</Link>
           <Link to="/events" onClick={closeMenu}>События</Link>
-          <Link to="/contacts" onClick={closeMenu}>Контакты</Link>
+          <Link to="/kont" onClick={closeMenu}>Контакты</Link>
         </div>
+            </div>
       </section>
       {isMenuOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
     </>

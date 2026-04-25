@@ -25,6 +25,7 @@
 .Collectionh2 h2 {
    font-size: clamp(2.4375rem, 7.8125vw, 6.9375rem);
     width: 100%;
+    font-family: 'Geologica';
 }
 
 .Collectionh2 p {

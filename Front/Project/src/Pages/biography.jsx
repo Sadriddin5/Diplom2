@@ -208,7 +208,7 @@ export default function Biography(){
             </div> 
             <div className="detstva">
                 <h3>
-                   Награды и завания
+                   Награды и  завания
                 </h3>
             </div>
             <div className="rewards">
@@ -222,7 +222,7 @@ export default function Biography(){
             </div> 
             <div className="detstva">
                 <h3>
-                    Из личного архива
+                    Из личного <br /> архива
                 </h3>
             </div>
             <div className="fromZIP">

@@ -46,7 +46,8 @@
     margin-right: clamp(-5%, -1%, -1%);
 }
 .bioTop span{
-    font-family: 'Quvality';
+    
+    font-family: 'ForumFont';
     font-size: clamp(22px, 3vw, 60px);
 }
 .bioTop h3{
@@ -75,11 +76,11 @@
     border-bottom: 2px solid #C3B9AC;
 }
 .detstva h3{
-    font-family: 'Quvality';
-    font-size: clamp(36px, 6vw, 111px);
+    font-family: 'Geologica';
+    font-size: clamp(36px, 6vw, 90px);
     color: #344163;
     line-height: 85%;
-    font-weight: 100;
+    font-weight: 600;
 }
 .contentBio{
     height: fit-content; 
@@ -155,7 +156,7 @@
 
 .yearsDesc p{
 font-size: clamp(40px, 2.5vw, 48px);
-font-family: 'Quvality';
+    font-family: 'ForumFont';
 height: clamp(102px, 6.56vw, 112px); 
 padding-right: 30px;
 color: #344163;
