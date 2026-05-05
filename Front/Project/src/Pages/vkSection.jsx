@@ -1,6 +1,6 @@
 
-import left from './imgs/toLeft.png'
-import right from './imgs/toRight.png'
+import left from './imgs/left.png'
+import right from './imgs/right.png'
 import './vksection.css'
 
 import { useRef } from 'react';
@@ -35,7 +35,7 @@ export default function VkSection(){
             <hr className='hrvk'/>
             <div className=" butsvk">
                 <img onClick={handlePrev} src={left} alt="" />
-                <hr />
+              
                 <img onClick={handleNext} src={right} alt="" />
             </div>
             <hr className='hrvk'/>
@@ -45,7 +45,7 @@ export default function VkSection(){
                             onSwiper={(swiper) => {
                                 swiperRef.current = swiper;
                             }}
-                            slidesPerView={2.5}
+                            slidesPerView={3}
                             spaceBetween={10}
                             pagination={{
                                 clickable: true,

@@ -1,0 +1,78 @@
+.firstSlider { 
+  width: 100%;
+  height: clamp(300px, 45.7291vw, 878px);
+  position: relative;
+}
+
+.slideFirst {
+
+  width: clamp(375px, 100%, 100%);
+  height: clamp(300px, 45.7291vw, 878px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    border-radius: 22px;
+}
+ 
+.slid1Slider {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 13px;  
+  background: rgba(70, 67, 67, 0.2);
+  backdrop-filter: blur(20px);
+  border: 1px solid  #C3B9AC; 
+  width: clamp(187px, 24.6875vw, 474px);
+  height: clamp(66px, 8.6979vw, 167px);
+  display: flex;
+  flex-direction: column;
+ 
+  padding: clamp(5px, 1.0416vw, 20px);
+  align-items: start;
+  justify-content: end;
+  z-index: 10;  
+}
+.slid1Slider p, h1 {
+color: #FFFFFF;
+font-family: 'Geologica';
+}
+.slid1Slider p {
+  font-size: clamp(9px, 1.91vw, 14px);
+  font-weight: 300;
+}
+
+.slid1Slider h1 {
+  font-size: clamp(16px, 1.9vw, 40px);
+  font-weight: 600;
+}
+.butsleftRightSlid1{
+   position: absolute;
+   z-index: 100;
+   width: 85%;
+   left: 7.5%;
+  bottom: clamp(150px, 20.2083vw, 388px); /*тоже уменшай на мобиле*/
+   display: flex;
+   justify-content: space-between;
+   height: fit-content; 
+  pointer-events: auto; 
+    
+
+}
+.butsleftRightSlid1 div{
+  height: clamp(27px, 6.6667vw, 80px);
+  width: clamp(27px, 6.6667vw, 80px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+     background: rgba(70, 67, 67, 0.2);
+  backdrop-filter: blur(20px);
+  border: 1px solid  #C3B9AC; 
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+.butsleftRightSlid1 img{
+  width: clamp(13px, 2.9167vw, 35px);
+  height: clamp(13px, 2.9167vw, 35px);
+}

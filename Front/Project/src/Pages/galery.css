@@ -81,16 +81,15 @@
 
 .filtr1 select {
     width: 100%;
-    border: 2px solid #C3B9AC;
+    border: 1px solid #CFCECC;
     border-radius: 8px;
-    height: clamp(36px, 6vw, 49px);
-    background-color: #F6EEDC;
+    height: clamp(36px, 6vw, 49px); 
+    background-color: transparent;
     font-size: clamp(10px, 2vw, 20px);
     color: #282424;
     padding-left: 8%;
 }
-
-/* ===== СОРТИРОВКА ===== */
+ 
 .sorts {
     display: flex;
     flex-wrap: wrap;
@@ -103,9 +102,9 @@
 
 .sorts button {
     width: clamp(89px, 20vw, 214px);
-    height: clamp(36px, 6vw, 46px);
-    background-color: #F6EEDC;
-    border: 1px solid #C3B9AC;
+      height: clamp(36px, 6vw, 49px); 
+    background-color: transparent;
+    border: 1px solid #CFCECC;
     border-radius: 10px;
     font-size: clamp(10px, 1.8vw, 16px);
     cursor: pointer;
@@ -113,9 +112,9 @@
 
 .sorts select {
     width: clamp(117px, 25vw, 330px);
-    height: clamp(36px, 6vw, 46px);
-    background-color: #F6EEDC;
-    border: 1px solid #C3B9AC;
+      height: clamp(36px, 6vw, 49px); 
+    background-color: transparent;
+    border: 1px solid #CFCECC;
     border-radius: 10px;
     font-size: clamp(10px, 1.8vw, 16px);
     padding-left: 4%;
@@ -128,7 +127,10 @@
     margin: 0 auto;
     padding: 0 16px;
 }
-
+.worksFounded p{
+    font-family: "Geologica";
+    
+}
 .worksFoundedP {
     
     width: clamp(325px, 80vw, 1480px);
@@ -223,11 +225,10 @@
 
 .sorts select {
     width: clamp(117px, 33vw, 330px);
-    height: clamp(15px, 7vw, 46px);
-    background-color: #F6EEDC;
+    
     font-family: 'ForumFont';
     font-size: clamp(10px, 2.4vw, 16px);
-    border: 1px solid #C3B9AC;
+   
     border-radius: 10px;
 }
 }
@@ -261,6 +262,9 @@
 
 .sorts select {
     width: clamp(117px, 34vw, 330px);
+    height: clamp(15px, 7vw, 46px);
+}
+.filtr1 select { 
     height: clamp(15px, 7vw, 46px);
 }
 }

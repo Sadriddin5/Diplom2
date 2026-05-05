@@ -30,7 +30,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
           <span></span>
         </div>
         <div className={`links ${isMenuOpen ? 'open' : ''}`}>
-          <Link to="/home" >Главная</Link>
+          <Link to="/home" onClick={closeMenu} >Главная</Link>
           <Link to="/galery" onClick={closeMenu}>Галерея</Link>
           <Link to="/merch" onClick={closeMenu}>Мерч</Link>
           <Link to="/bio" onClick={closeMenu}>Биография</Link>

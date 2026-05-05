@@ -5,8 +5,8 @@ import { useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import left from './imgs/toLeft.png'
-import right from './imgs/toRight.png'
+import left from './imgs/left.png'
+import right from './imgs/right.png'
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';

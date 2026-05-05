@@ -5,8 +5,7 @@
 }
 .galery{
 width: 100%;
-   background-color: #F6EEDC;
-    padding-top: 2rem;
+   background-color: #F6EEDC; 
 
      max-width: 1920px;
     min-width: 375px;
@@ -237,8 +236,9 @@ margin-top: 5px;
     font-size: clamp(2.5rem, 8vw, 8.9rem);
 }
 h2 {
-    font-family: 'logoFont';
-    color: #344163;
+    font-family: 'Geologica';
+    color: #272727;
+
     font-size: clamp(2.5rem, 8vw, 8.9rem);
 }
 .left77 p {
@@ -301,416 +301,241 @@ h2 {
 
 
 .bio{
-    padding-left: 8%;
-    padding-right: 10px;
+    display: flex;
+    justify-content: center;
     min-width: 375px;
     max-width: 1920px;
-    height: fit-content;
-
-        background-color: #F6EEDC;
     width: 100%;
-}
-
-.bio h2{
-    font-family: 'logoFont';
-    font-size: clamp(2.4375rem, 7.8125vw, 6.9375rem);
-       
-} 
-
-@media (min-width:769px){
-    .bio h2{
-    font-family: 'logoFont';
-    font-size: clamp(2.4375rem, 7.8125vw, 6.9375rem);
-       padding-top: 2rem;
-       text-align: center;
-         margin-bottom: -7%;
-       color: #344163;
     
-      
-    margin-left: 7rem;
-}
-}
-.bio img{
-    width: clamp(119px, 25vw, 404px);
-height: clamp(9.875rem, 29.25vw, 30.5rem);
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-top: clamp(10px, 6vw, 100px);
+    margin-bottom: clamp(5px, 6vw, 100px);
 }
 
+/* заголовок */
+.bio h2{
+    font-family: 'Geologica';
+    font-size: clamp(24px, 6vw, 6.9375rem);
+    font-weight: 600;
+    width: 100%;
+    text-align: start;
+}
+
+/* картинка — почти ок */
+.bio img{
+ width: clamp(290px, 33vw, 488px);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* главный контейнер */
 .oleg{
     display: flex;
-    
+    align-items: end;
+    justify-content: space-between;
+
+    width: clamp(320px, 87vw, 1480px);
+    height: clamp(420px, 45vw, 668px);
+
+    padding-top: clamp(16px, 3vw, 10px);
+    padding-bottom: clamp(16px, 3vw, 10px); 
+    gap: clamp(10px, 3vw, 40px);
 }
+
+/* текст */
 .oleg p{
-    font-family: 'ForumFont';
-    font-size: clamp(0.688rem, 2vw, 1.5rem);
+    font-family: 'Geologica';
+    font-weight: 300;
+    font-size: clamp(12px, 1.7vw, 30px); 
 }
-.rightbio{
-    margin-top: 8rem;
+
+/* правая колонка */
+.rightbio{ 
     display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-width: clamp(238px, 80.5vw, 717px);
-    margin-left: 8%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; 
+    height: 100%;
+    width: clamp(180px, 53vw, 876px);
 }
-.rightbio p{
-    width: 90%;
-}
-.bio2{
-    margin-top: 2rem;
-}   
+ 
+
+ 
 .oleg button{
     font-family: 'Geologica';
-     font-weight: 100;
-    background-color: #644735;
+    font-weight: 400;
+
+    background-color: #273E91;
     color: #FFFFFF;
-    width: clamp(128px, 20.75vw, 396px);
-    height: clamp(27px, 6vh, 73px);
+
+    width: clamp(152px, 20vw, 286px);
+    height: clamp(26px, 5vw, 65px);
+
+    font-size: clamp(12px, 1.4vw, 24px);
+
     border: none;
-    font-size: clamp(11px, 1.67vw, 32px);
-    margin-top: 4rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.bio2 hr{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-    border: 0;
 
+
+@media(max-width:617px){
+.bio{ 
+    height: fit-content;
+    width: 100%;
+}
+.oleg{
+    flex-direction: column;
+    height: fit-content;
+    align-items: start; 
+    height: fit-content;
+        padding-top: 0;
+    padding-bottom: 0;  
+}
+.rightbio{
+width: 100%; 
+height: 257px;
+align-items: start;
+justify-content: space-between;
+}
+.bio img{
+ width: clamp(158px, 33vw, 290px);
+    height: auto;
+    object-fit: cover;
+}
+.oleg p{
+    font-family: 'Geologica';
+    font-weight: 300;
+    font-size: clamp(12px, 2.2vw, 40px); 
 }
 
-.hroleg1{
-    
-height: clamp(9.875rem, 29.25vw, 30.5rem);
-margin-top: 2rem;
-
-border: #C3B9AC 0.5px solid;
-    background-color: #C3B9AC;
-}
-
-/* Второй hr */
-.hroleg2 {
-height: clamp(29rem, 32.25vw, 39.5rem);
-border: #C3B9AC 0.5px solid;
-    background-color: #C3B9AC;
-}
-
-@media (min-width: 375px) and (max-width:1020px) {
-    .oleg button{
-      width: clamp(128px, 20.75vw, 396px);
-    height: clamp(27px, 4vh, 73px);
-    }
-}
-@media (min-width: 480px) and (max-width:768px) 
-{
-    .bio{
-    }
-    .hroleg1{
-        height: 0;
-        width: 0;
-        visibility: hidden
-    }   
-    .hroleg2{
-        height: 0;
-        width: 0;
-        visibility: hidden;
-    };
-    .oleg img{
-        margin-left: 0;
-    }
-    .oleg h2{
-    text-align: center;
-         margin-bottom: -7%;
-    }
-    .rightbio{
-        margin-top: 0;
-    }
-
-}
-@media(max-width:479px){
-    .bio{
-        padding-right: 10%;
-    }
-     .hroleg1{
-        height: 0;
-        width: 0;
-        visibility: hidden
-    }   
-    .hroleg2{
-        height: 0;
-        width: 0;
-        visibility: hidden;
-    };
-    .oleg img{
-        margin-left: 0;
-    }
-     .rightbio{
-        margin-top: 25%;
-        display: flex;
-        margin-left: 0;
-        justify-content: end;
-        align-items: end;
-    }
-    .oleg button{
-        margin-top: 5%;
-    }
-    .bio1{
-    }
-    .bio2{
-      margin-left: -102%;
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
-    }
-    .bio2 hr{
-        height: 65px;
-        width: 0.2px;
-        visibility: visible;
-        border: #C3B9AC 0.2px solid;
-        background-color: #C3B9AC;
-    }
-    .bio2 p{
- 
-        width: 95%;
-    };
-}
-
-
-hr{
-    border: #C3B9AC 0.2px solid;
-        background-color: #C3B9AC;
-}
-
-.creativity{
+}.creativity{
     min-width: 360px;
     max-width: 1920px;
     width: 100%;
-    height: clamp(427px, 44vw, 797px);
-    margin-top: 3%;
-    padding-left: clamp(16px, 8%, 8%);
-    padding-right: clamp(16px, 10%, 10%);
 
-}
-.topAndBot{
-    width: clamp(926px, 84.3vw, 1550px);
-    height: 0px;
-    border: 1px solid #C3B9AC;
+    height: clamp(460px, 44vw, 797px);
 
-}
-.mainCreat{
-    display: flex;
-  height: clamp(427px, 41vw, 787px); 
-}
-
-.h2Creativity{
-   
-    padding: clamp(10px, 10%, 20px);
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
- width: clamp(119px, 29.4vw, 469px);
-
-}
-.h2CreatMain{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    border-right: 2px solid #C3B9AC;
-   
 
+    background-image: url(imgs/baltiyskiy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 22px;
 }
-.h2CreatMain hr{
-    border: 1px solid #C3B9AC;
-   height: clamp(100px, 38.2vw, 613px);
-    
+
+/* контейнер */
+.mainCreat{
+    display: flex;
+    height: 100%;
+
+    width: clamp(320px, 85vw, 1480px);
 }
+
+/* правая панель */
+.h2CreatMain{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 100%;
+    width: clamp(251px, 45vw, 652px);
+
+    background: rgba(219, 132, 19, 0.5);
+    backdrop-filter: blur(20px);
+
+    border-right: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+}
+
+/* текстовый блок */
+.h2Creativity{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: clamp(228px, 35vw, 571px);
+    height: clamp(250px, 38vw, 596px);
+}
+
+/* заголовок */
 .h2Creativity h2{
-    font-family: 'logoFont';
-    color: #344163;
-    font-size: clamp(2.4375rem, 5.8125vw, 6.9375rem);     
-} 
-.h2Creativity p{
-    font-family: 'ForumFont';
-    font-size: clamp(0.9rem, 1.7vw, 1.5rem);
-    
-    margin-top: clamp(10px, 5.3vh, 4rem);
-    color: #3B3534;
-   
+    font-family: 'Geologica';
+    color: #FFFFFF;
+font-size: clamp(24px, 4vw, 64px);
+    font-weight: 600;
 }
+
+/* текст */
+.h2Creativity p{
+    width: 90%;
+    font-family: 'Geologica';
+
+    font-size: clamp(12px, 1.6vw, 30px);
+    font-weight: 300;
+
+    color: #FFFFFF;
+}
+
+/* кнопка */
 .h2Creativity button{
     font-family: 'Geologica';
-     font-weight: 100;
-    background-color: #644735;
+    font-weight: 400;
+
+    background-color: #273E91;
     color: #FFFFFF;
-    width: clamp(153px, 20.75vw, 429px);
-    height: clamp(25px, 6vh, 65px);
-    border: none;
-    font-size: clamp(14px, 1.67vw, 32px);
-    margin-top: clamp(10px, 5.3vh, 4rem);
+ color: #FFFFFF;
+border: none;
+    width: clamp(152px, 20vw, 286px);
+    height: clamp(26px, 5vw, 65px);
+
+    font-size: clamp(12px, 1.4vw, 24px); 
+
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-.leftCreate{
+ 
+.h2-hr{
     display: flex;
+    align-items: end;
     justify-content: space-between;
-    
-width: clamp(238px, 55.5vw, 858px);
-    
+    width: 100%;
 }
 
-.leftCreate img{
-  width: clamp(127px, 22vw, 370px);
-  height: clamp(153px, 28vw, 482px);
-   
+.h2-hr hr{ 
+    width: clamp(78px, 9vw, 168px);
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    margin-bottom: 3%;
 }
-.createCard{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-    border-right: 2px solid #C3B9AC;
-  padding-top: clamp(5%, 5vw, 10%);
-gap: clamp(2px, 1.5vw, 10px);
-width: clamp(119px, 27.3vw, 429px);
-}
-.createCard p{
-    text-align: start;
-    width: clamp(119px, 20vw, 369px);
-    
- font-size: clamp(11px, 1.25vw, 24px);
-  font-family: 'ForumFont';
-}
-.createCard h6{
-  text-align: start; 
-  font-size: clamp(11px, 1.25vw, 24px);
-  font-family: 'ForumFont';
-  width: clamp(119px, 20.4vw, 369px);
-}
+
 .tecPic{
     color: #B58641;
 }
- @media (max-width: 1519px)  {
-    .hroleg2{
-        height: 0;
-        width: 0;
-        visibility: hidden;
-    }
-    .createCard{
-      padding-top: clamp(5%, 2vw, 10%);
-    }
-    .h2Creativity p{
-        margin-top: clamp(10px, 1vw, 4rem);
-    }
-    .h2Creativity button{
-        margin-top: clamp(10px, 1vw, 4rem);
-        height: clamp(25px, 4vh, 65px);
-    }
-    
- }
-  @media (max-width: 1100px){
- .createCard{
-      padding-top: clamp(2%, 1vw, 7%);
-    }
-    .h2Creativity p{
-        margin-top: clamp(10px, 1vw, 4rem);
-    }
-    .h2Creativity button{
-        margin-top: clamp(10px, 1vw, 4rem);
-    }
-   .h2Creativity p{
-    
-    font-size: clamp(0.9rem, 1.7vw, 1.5rem);
-    }
-    .topAndBot{
-    width: clamp(325px, 84.5vw, 1000px);
+.text-desktop{
+  display: none;
 }
-    
+
+@media (max-width: 617px){
+    .h2Creativity span{
+        display: none;
+    }
+}
+@media (max-width: 480px){
+  .text-mobile{
+    display: none;
   }
-    @media (max-width: 768px){
-        
-        .leftCreate{
-            border-left: 2px solid #C3B9AC;
-            flex-direction: column;
-            height: fit-content;
-        }
-        .creativity{
-        height: fit-content;
-        }
-        .mainCreat{
-            height: fit-content;
-            border-left: 2px solid #C3B9AC;
-            display: flex;
-
-
-        }
-        .topCard{
-            border-bottom: 1px solid #C3B9AC;
-        }
-        .topAndBot{
-            width: 100%;
-        }
-        .h2CreatMain hr{
-            visibility: hidden;
-            height: 0;
-            width: 0;
-        }
-        .h2Creativity{       
-        width: clamp(119px, 43vw, 400px);
-        }
-        .createCard{
-            border-right: 0;
-            padding-left: 5%;
-            gap: clamp(2px, 1vw, 10px);
-            width: 100%;
-           
-        }
-      
-        .h2Creativity p{
-            font-size: clamp(0.9rem, 1.7vw, 1.5rem);
-        }
-        .h2Creativity{
-            padding: 0;
-            border-left: 0;
-        }
-        .h2CreatMain{
-            border-left: 0;
-            border: 0;
-        }
-        .h2Creativity p{
-        margin-top: clamp(10px, 1vw, 4rem);
-    }
-    .h2Creativity button{
-        margin-top: clamp(10px, 1vw, 4rem);
-        height: clamp(25px, 4vh, 65px);
-    }
-    .h2CreatMain hr{
-        height: 0;
-        width: 0;
-        visibility: hidden;
-    }
-    .createCard{
-        padding-top: 10%;
-    }
-    .createCard h6{
-        margin-left: 0;
-width: clamp(127px, 22vw, 370px);
-    }
-    .createCard p{
-        
-width: clamp(127px, 22vw, 370px);
-    }
-    }
+  .text-mobile{
+    display: block;
+  }
+}
+ 
+ 
+   
    @media (max-width:480px){
-    .mainCreat{
-        border: 0;
-    }
-     .h2Creativity p{
-        font-size: clamp(11px, 3vw, 15px);
-    }
+    
       .museumH2 p {
     line-height: clamp(1.2, 2vw, 1.5);
     margin-top: 0;
@@ -869,13 +694,7 @@ button{
 .museumH2{
     width: fit-content;
 }
-/* .museumH2 p{
-    
-    line-height: clamp(0.8, 1vw, 1.5);
-    width: clamp(155px, 10vw, 387px);
-    font-size: clamp(0.9rem, 0.5vw, 1.5rem);
-    margin-top: clamp(10px, 5.3vh, 4rem);
-} */
+ 
 }
 
 
@@ -906,4 +725,407 @@ button{
     border: 1px solid #C3B9AC;
    height: clamp(100px, 38.2vw, 613px);
     
+}
+
+
+.galery{ 
+     
+    border-radius: 22px;
+    margin-bottom: 12px;
+}
+.AboutMuseumSection {
+  height: clamp(320px, 50.7291vw, 974px);
+  width: 100%;
+  background-image: url(imgs/fonMain2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutMuseumMain {
+  background: rgba(70, 67, 67, 0.2);
+  backdrop-filter: blur(20px);
+  border: 1px solid #C3B9AC;
+  height: clamp(265px, 30.8333vw, 592px);
+  width: clamp(325px, 64.2708vw, 1234px);
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5%, 0.625vw, 12%);
+
+  
+}
+
+.AboutMuseumH1 {
+  width: clamp(184px, 30.625vw, 588px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: clamp(54px, 7.7604vw, 149px);
+  color: #FFFFFF; 
+
+}
+
+.AboutMuseumH1 h1 {
+  font-size: clamp(24px, 5vw, 96px);
+  font-weight: 600;
+  line-height: 95.5%;
+  font-family: 'Geologica';
+}
+
+.AboutMuseumH1 h3 {
+  font-size: clamp(24px, 2.5vw, 48px);
+  font-weight: 600;
+  line-height: 118.6%;
+  font-family: 'Geologica';
+}
+
+.AboutMuseumP p {
+  font-size: clamp(12px, 1.25vw, 24px);
+  font-weight: 300;
+  line-height: auto;
+  font-family: 'Geologica';
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.AboutMuseumP {
+  height: clamp(143px, 10.5208vw, 202px);
+  width: clamp(263px, 54.4271vw, 1045px);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+}
+@media(max-width:500px){
+    .AboutMuseumP br{
+        display: none;
+    }
+    .AboutMuseumP{
+        justify-content: space-between;
+    }
+}
+.kartiny{
+    display: flex;
+    height: clamp(500px, 65vw, 1166px);
+    width: 100%;
+    min-width: 360px;
+    max-width: 1920px;
+    border-radius: 22px;
+    margin-top: 12px;
+    background-color: red;
+}
+
+/* LEFT + RIGHT */
+.left-kartina{
+    width: clamp(260px, 69.3%, 1330px);
+    background-color: blue;
+    display: flex;
+    border-radius: 22px 0 0 22px;
+}
+
+.right-kartina{
+    width: clamp(140px, 30.7%, 590px);
+    border-radius: 0 22px 22px 0;
+    background-color: #644735;
+    height: 100%;
+}
+
+/* LEFT BIG */
+.left-big-kartina{
+    width: clamp(180px, 58%, 770px);
+    height: 100%;
+
+    background:
+      linear-gradient(
+        to top,
+        rgba(52, 65, 99, 0.85) 0%,
+        rgba(52, 65, 99, 0.6) 30%,
+        rgba(52, 65, 99, 0.3) 55%,
+        rgba(52, 65, 99, 0.12) 75%,
+        rgba(52, 65, 99, 0.03) 100%
+      ),
+      url(imgs/kartina3.png); 
+    padding: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* LEFT SMALL */
+.left-small-kartina{
+    width: clamp(140px, 42%, 560px);
+    height: 100%;
+    border-radius: 22px 0 0 22px;
+    background-color: violet;
+}
+
+/* RIGHT TOP */
+.right-top{
+    height: clamp(220px, 64%, 750px);
+    width: 100%;
+    border-radius: 0 22px 0 0;
+    background-color: yellow;
+    display: flex;
+}
+
+/* TOP BLOCK */
+.top1-kartina{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    align-items: end;
+    justify-content: end;
+}
+
+/* BOTTOM */
+.bottom-text{
+    background-color: #EBEDF1;
+    height: 36%;
+    border-radius: 0 0 22px 0;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding: clamp(10px, 1.5vw, 20px);
+}
+
+/* LEFT SMALL BLOCKS */
+.left-small-kartina div:last-child{
+    background:
+      linear-gradient(
+        to top,
+        rgba(52, 65, 99, 0.85) 0%,
+        rgba(52, 65, 99, 0.6) 30%,
+        rgba(52, 65, 99, 0.3) 55%,
+        rgba(52, 65, 99, 0.12) 75%,
+        rgba(52, 65, 99, 0.03) 100%
+      ),
+      url(imgs/kartina2.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 22px 0 0;
+}
+
+.left-small-kartina div:nth-child(2){
+    background:
+      linear-gradient(
+        to top,
+        rgba(52, 65, 99, 0.85) 0%,
+        rgba(52, 65, 99, 0.6) 30%,
+        rgba(52, 65, 99, 0.3) 55%,
+        rgba(52, 65, 99, 0.12) 75%,
+        rgba(52, 65, 99, 0.03) 100%
+      ),
+      url(imgs/kartina1.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right-top div:first-child{
+background:
+      linear-gradient(
+        to top,
+        rgba(52, 65, 99, 0.85) 0%,   
+        rgba(52, 65, 99, 0.6) 30%,
+        rgba(52, 65, 99, 0.3) 55%,
+        rgba(52, 65, 99, 0.12) 75%,
+        rgba(52, 65, 99, 0.03) 100%   
+      ),
+      url(imgs/kartina4.png);
+
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.right-top div:last-child{
+    border-radius: 0 22px 0 0;
+background:
+      linear-gradient(
+        to top,
+        rgba(99, 88, 52, 0.85) 0%,   
+        rgba(52, 65, 99, 0.6) 30%,
+        rgba(52, 65, 99, 0.3) 55%,
+        rgba(52, 65, 99, 0.12) 75%,
+        rgba(52, 65, 99, 0.03) 100%   
+      ),
+      url(imgs/kartina5.png);
+
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+/* TEXT BLOCKS */
+.smal1-kartina{
+    width: 100%;
+    height: 37.9%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 15px;
+}
+
+/* H2 BLOCK */
+.h2-kartina{
+    width: 100%;
+    height: 24.099%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    border-radius: 22px 0 0 0;
+    background-color: #344163;
+    padding: 15px;
+}
+
+/* TEXT CONTAINER */
+.bottom-text section{
+    height: 95%;
+    width: clamp(220px, 22vw, 401px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* ================= TEXT ================= */
+
+.h2-kartina h3{
+    font-size: clamp(24px, 4vw, 74px);
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Geologica';
+}
+
+.h2-kartina p{
+    font-size: clamp(12px, 1.5vw, 30px);
+    font-weight: 300;
+    color: #FFFFFF;
+    font-family: 'Geologica';
+}
+
+.bottom-text p{
+    font-size: clamp(12px, 1.7vw, 30px);
+    font-weight: 300;
+    color: #222222;
+    font-family: 'Geologica';
+}
+
+.bottom-text button{
+    height: clamp(26px, 3.5vw, 65px);
+    width: clamp(181px, 16vw, 304px);
+    background-color: #273E91;
+    color: #FFFFFF;
+    border: none;
+    font-size: clamp(12px, 1.7vw, 24px);
+}
+
+/* SMALL CARDS TEXT */
+.smal1-kartina p{
+    font-size: clamp(11px, 0.8vw, 14px);
+    font-weight: 400;
+    font-family: 'Geologica';
+    color: #FFFFFF;
+}
+
+.smal1-kartina h6{
+    font-size: clamp(14px, 1.2vw, 24px);
+    font-weight: 300;
+    color: #FFFFFF;
+    font-family: 'Geologica';
+}
+
+.left-big-kartina p{
+    font-size: clamp(11px, 0.8vw, 14px);
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Geologica';
+}
+
+.left-big-kartina h6{
+    font-size: clamp(14px, 1.2vw, 24px);
+    font-weight: 300;
+    color: #FFFFFF;
+    font-family: 'Geologica';
+}
+
+.top1-kartina p{
+    font-size: clamp(11px, 0.8vw, 14px);
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Geologica';
+}
+
+.top1-kartina h6{
+    font-size: clamp(14px, 1.2vw, 24px);
+    font-weight: 300;
+    color: #FFFFFF;
+    width: 100%;
+    height: fit-content;
+    text-align: end;
+    font-family: 'Geologica';
+}
+ 
+.left-kartina section,
+.right-top section{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.h2-kartina{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end; 
+}
+
+.h2-kartina h3,
+.h2-kartina p{
+    width: 75%; 
+}
+@media(max-width:658px){
+    .kartiny{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .left-kartina, .right-kartina{
+        width: 100%;
+
+    }
+    .left-small-kartina, .left-big-kartina, .top1-kartina{
+     width: 50%;
+     aspect-ratio: 183 / 374;
+
+    }
+    .right-top div:last-child{
+        border-radius: 0;
+    }
+    .left-big-kartina{
+        border-radius: 0 22px 0 0;
+    }
+    .bottom-text{
+        width: 100%;
+        aspect-ratio: 375/146;
+    }
+    .bottom-text section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+    }
+    
+.bottom-text p{
+    width: clamp(90%, 95vw, 100%);
+    font-size: clamp(12px, 2vw, 40px);
+}
 }
