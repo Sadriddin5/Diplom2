@@ -11,8 +11,8 @@ import './firstSlid.css';
 const slides = [
   {
     img: img1,
-    year: '2020 год',
-    title: 'Название картины 1',
+    year: '1989 год',
+    title: 'Розовый Вечер',
     desc: 'Холст, масло, 100 × 200 см'
   },
   {

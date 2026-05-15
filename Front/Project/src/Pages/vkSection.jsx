@@ -1,6 +1,6 @@
 
-import left from './imgs/left.png'
-import right from './imgs/right.png'
+import left from './imgs/right.png'
+import right from './imgs/left.png'
 import './vksection.css'
 
 import { useRef } from 'react';
@@ -27,18 +27,17 @@ export default function VkSection(){
     };
     return(
         <> 
-        <section className='SliderVK'>
-            <hr className='hrvk'/>
+       <div className="sliderVkMain">
+         <section className='SliderVK'> 
             <div className="vkh2">
-                <h2><u>Следите за событиями <br /> в  группе ВКонтакте</u></h2>
-            </div>
-            <hr className='hrvk'/>
-            <div className=" butsvk">
-                <img onClick={handlePrev} src={left} alt="" />
-              
-                <img onClick={handleNext} src={right} alt="" />
-            </div>
-            <hr className='hrvk'/>
+                <h2>Cледите за событиями <br /> в  группе <u>ВКонтакте</u></h2>
+                  <div className=" butsvk butsForMerge butsvk">
+            <div>    <img onClick={handlePrev} src={left} alt="" /></div>
+              <hr />
+                <div><img onClick={handleNext} src={right} alt="" /></div>
+            </div> 
+            </div> 
+          
 
             <div className="vkslider">
               <Swiper
@@ -52,22 +51,18 @@ export default function VkSection(){
                                 dynamicBullets: true,
                             }}
                             speed={1500}
-                            autoplay={{
-                                delay: 50,
-                                disableOnInteraction: false,
-                                pauseOnMouseEnter:true,
-                            }}
+                           
                             
                             loop={true}
                             modules={[ Navigation, Autoplay]}
-                            className="mySwiper"
+                            className="swiperVKSlider"
                          breakpoints={{
                                 320: {
                                     slidesPerView: 1.5,
                                     spaceBetween: 8,
                                 },
                                 768: {
-                                    slidesPerView: 2.5,
+                                    slidesPerView: 3,
                                     spaceBetween: 10,
                                 }
                             }}
@@ -87,6 +82,7 @@ export default function VkSection(){
             </div>
   
            </section>
+       </div>
         </>
     )
 }

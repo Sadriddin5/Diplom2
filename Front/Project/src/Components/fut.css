@@ -6,7 +6,9 @@
 }
 
 .futSection{
-    width: clamp(375px, 100vw 1920px);
+    width: 100%;
+    max-width: 1920px;
+    min-width: 36opx;
     height: clamp(461px, 50vh, 489px);
     background-color: #344163;
     padding-top: clamp(10px, 10vh, 100px);

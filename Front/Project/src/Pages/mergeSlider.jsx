@@ -5,25 +5,25 @@ import { useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import left from './imgs/left.png'
-import right from './imgs/right.png'
+import left2 from './imgs/left2.png'
+import right2 from './imgs/right2.png'
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
 
  export default function mergeSlider(){
-     const swiperRef = useRef(null); // ← здесь будет храниться экземпляр Swiper
+     const swiperRef = useRef(null);  
 
     const handlePrev = () => {
         if (swiperRef.current) {
-            swiperRef.current.slidePrev(); // ← используем метод slidePrev
+            swiperRef.current.slidePrev(); 
         }
     };
 
     const handleNext = () => {
         if (swiperRef.current) {
-            swiperRef.current.slideNext(); // ← используем метод slideNext
+            swiperRef.current.slideNext(); 
         }
     };
     return(
@@ -39,41 +39,36 @@ import { Pagination, Navigation } from 'swiper/modules';
                         Мерч
                     </h2>
                     <p>
-                        Vulputate eget, arcu. In enim justo, rhoncus ut, 
-                        imperdiet a, venenatis vitae, justo. Nullam dictum 
-                        felis eu pede mollis pretium. Integer tincidunt. 
-                        Cras dapibus. Vivamus elementum semper nisi. 
-                        Aenean vulputate eleifend tellus. Aenean leo 
-                        ligula, porttitor eu, consequat vitae, eleifend ac, 
-                        enim. Aliquam lorem ante, dapibus in, viverra quis, 
-                        feugiat a, tellus. Phasellus viverra nulla ut metus 
-                        varius laoreet. Quisque rutrum. Aenean imperdiet. 
-                        Etiam ultricies nisi vel augue. 
+                       Vulputate eget, arcu. In enim justo, 
+                       rhoncus ut, imperdiet a, venenatis vitae,
+                        justo. Nullam dictum felis eu pede mollis 
+                        pretium. Integer tincidunt. Cras dapibus. 
+                        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
                     </p>
                     <button>Узнать больше </button>
                 </div>
                 
-                <div className="rightMerge">
-                    <hr />
+                <div className="rightMerge"> 
                    <div className="rightMainMerge">
                      <div className="butsForMerge">
-                        <img onClick={handlePrev}src={left} alt="" />
+                       <div> <img onClick={handlePrev}src={left2} alt="" /></div>
                         <hr />
-                        <img onClick={handleNext} src={right} alt="" />
+                        <div><img onClick={handleNext} src={right2} alt="" /></div>
                     </div>
                   
                     <div className="mergeSlid">
                       <Swiper
   onSwiper={(swiper) => (swiperRef.current = swiper)} 
-  slidesPerView={2}  // по умолчанию для ПК
+  slidesPerView={2}  
   spaceBetween={5}
   breakpoints={{
     0: {
-      slidesPerView: 1,  // на телефонах (0-800px) — 1 слайд
-      spaceBetween: 10,
+      slidesPerView: 2,   
+      spaceBetween: 8,
     },
     801: {
-      slidesPerView: 2,  // на ПК (801px и шире) — 2 слайда
+      slidesPerView: 2,   
       spaceBetween: 15,
     }
   }}
@@ -159,8 +154,7 @@ import { Pagination, Navigation } from 'swiper/modules';
                     </div>
                    </div>
                 </div>
-                </div>
-                    <hr className='topAndBot' />
+                </div> 
             </section>
         </>
     )

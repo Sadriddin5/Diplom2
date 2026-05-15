@@ -6,6 +6,7 @@ import liniya from './imgs/liniya.png'
 import oleg from './imgs/oleg.png'
 import Creat1 from './imgs/Mask1.png'
 import Creat2 from './imgs/Mask2.png'
+import location from './imgs/location.png'
 
 import Mergeslider from './mergeSlider.jsx'
 import { useRef } from 'react';
@@ -155,18 +156,45 @@ export default function Home() {
                 </div>
             </section>
            <Mergeslider/>
-            <section className='SecMuseum'>
-            <div className="museum863"></div>
-             <hr />
-                    <div className="museumH2 ">
-                    <h2>Музей</h2>
-                    <div>
-                          <p>{isMobile ? longText : shortText}</p>
-                        <button>Узнать больше </button>
+            <section className='Museum-Section'> 
+               <div className="mainCreat">
+                 <div className="h2MuseumMain">
+                
+                    <div className="h2Museum">
+                        <div className="h2-museum">
+                    <h2>О проекте музея <br /> в Светлогорске</h2>
+                    <div className="museumLocation">
+                        <img src={location} alt="" />
+                        <p>г. Город, ул. Улица. д. 1, кв. 2 <br /> Мulputate eget, arcu.</p>
                     </div>
                 </div>
-                
-           </section> 
+                        <p  className='museumP'>
+                      Lorem ipsum dolor sit amet, consectetuer 
+                      adipiscing elit. Aenean commodo ligula eget
+                       dolor. Aenean massa. Cum sociis natoque penatibu
+                       s et magnis dis parturient montes, nascetur ridiculus 
+                       mus. Donec quam felis, ultricies nec, pellentesque eu, 
+                      pretium quis, sem. Nulla consequat massa quis enim. 
+                      Donec pede justo.
+
+    </p>
+     <div className="but-hr">
+                       <div>
+
+                           <hr />
+                       <button>Узнать больше  </button>
+                       </div>
+              
+                  </div>
+         
+                       
+                     
+                </div>
+                 </div>
+                 
+               </div>
+                 
+            </section>
           <VK/>
          
         </>

@@ -51,9 +51,10 @@
     font-size: clamp(22px, 3vw, 60px);
 }
 .bioTop h3{
-    font-family: 'ForumFont';
+    font-family: 'Geologica';
     font-size:  clamp(11px, 1.5vw, 30px);
     line-height: clamp(0.8vh, 4.2vh, 4.2vh);
+    font-weight: 400;
 }
 .bioTop img{
     
@@ -77,9 +78,9 @@
 }
 .detstva h3{
     font-family: 'Geologica';
-    font-size: clamp(36px, 6vw, 90px);
+    font-size: clamp(24px, 4.69vw, 90px);
     color: #344163;
-    line-height: 85%;
+    line-height: 83%;
     font-weight: 600;
 }
 .contentBio{
@@ -93,8 +94,9 @@
 .contentBio p{
     width: clamp(325px, 80vw, 1324px); 
     font-size: clamp(11px, 1.7vw, 29px);
-    font-family: 'ForumFont';
+    font-family: 'Geologica';
     line-height: 145%;
+    font-weight: 400;
 }
 
 
@@ -111,7 +113,7 @@
 
 }
 .vistavki h1{
-   font-size: clamp(25px, 1.67vw, 32px);
+  font-size: clamp(10px, 1.67vw, 32px);
     height: 90px;
     width: 100%;
     padding-top: 2%;
@@ -136,8 +138,9 @@
 }
 .desc1Bio p{
     width: clamp(850px, 53.75vw, 1032px); 
-   font-size: clamp(23px, 1.65vw, 30px);
-    font-family: 'ForumFont';
+   font-size: clamp(11px, 1.65vw, 30px);
+    font-family: 'Geologica';
+    font-weight: 200;
 }
 
 .desc1Bio img{
@@ -177,7 +180,12 @@ color: #344163;
 .vistavki2 h1{
 margin-bottom: 2%;
 }
-
+.hrBiog{
+    background-color: #C3B9AC;
+    border-color: #C3B9AC;
+    border: 0;
+    height: 2px;
+}
 
 @media(max-width:1519px){
  
@@ -212,9 +220,7 @@ height: clamp(82px, 7.3vw, 112px);
 }
 
 @media(max-width:1119px){
-    .vistavki h1{
-   font-size: clamp(11px, 1.7vw, 20px);
-}
+
     .vistavki{
         justify-content: space-evenly;
     height: clamp(390px, 45.5vw, 735px); 
@@ -344,8 +350,8 @@ padding-right: 10px;
 .vistavki h1 {
   height: 0;
   padding-bottom: 5%;
-  font-family: 'ForumFont';
-  width: 209px;
+  font-family: 'Geologica';
+  width: 259px;
 }
 .vistavki2 h1{
     width: 279px;
@@ -438,7 +444,7 @@ padding-right: 5px;
 }
 
 .fromZIP div {
-    aspect-ratio: 450 / 521; /* сохраняем пропорции */
+    aspect-ratio: 450 / 521; 
     background-color: #C3B9AC;
     width: 100%;
     height: auto;
@@ -550,17 +556,17 @@ padding-right: 5px;
     width: clamp(325px, 80vw, 1480px);
 }
 .detstva h3{
-    font-size: clamp(36px, 9.3vw, 50px);
+    font-size: clamp(24px, 5vw, 50px);
 }
 }
 
 @media(max-width:480px){
     .detstva{
-    height: clamp(89px, 17vh,  120px);
+    height: clamp(89px, 7vh,  120px);
     width: clamp(325px, 80vw, 1480px);
 }
 .detstva h3{
-    font-size: clamp(36px, 9vw, 50px);
+    font-size: clamp(24px, 4.69vw, 90px);
 }
 }
 

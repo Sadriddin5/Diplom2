@@ -238,8 +238,6 @@ margin-top: 5px;
 h2 {
     font-family: 'Geologica';
     color: #272727;
-
-    font-size: clamp(2.5rem, 8vw, 8.9rem);
 }
 .left77 p {
     font-family: 'ForumFont';
@@ -409,7 +407,8 @@ justify-content: space-between;
     font-size: clamp(12px, 2.2vw, 40px); 
 }
 
-}.creativity{
+}
+.creativity{
     min-width: 360px;
     max-width: 1920px;
     width: 100%;
@@ -423,7 +422,7 @@ justify-content: space-between;
     background-image: url(imgs/baltiyskiy.png);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 22px;
+  border-radius: clamp(5px, 1.15vw, 22px);
 }
 
 /* контейнер */
@@ -433,8 +432,7 @@ justify-content: space-between;
 
     width: clamp(320px, 85vw, 1480px);
 }
-
-/* правая панель */
+ 
 .h2CreatMain{
     display: flex;
     align-items: center;
@@ -450,7 +448,6 @@ justify-content: space-between;
     border-left: 2px solid #FFFFFF;
 }
 
-/* текстовый блок */
 .h2Creativity{
     display: flex;
     flex-direction: column;
@@ -459,8 +456,6 @@ justify-content: space-between;
     width: clamp(228px, 35vw, 571px);
     height: clamp(250px, 38vw, 596px);
 }
-
-/* заголовок */
 .h2Creativity h2{
     font-family: 'Geologica';
     color: #FFFFFF;
@@ -468,7 +463,6 @@ font-size: clamp(24px, 4vw, 64px);
     font-weight: 600;
 }
 
-/* текст */
 .h2Creativity p{
     width: 90%;
     font-family: 'Geologica';
@@ -479,7 +473,6 @@ font-size: clamp(24px, 4vw, 64px);
     color: #FFFFFF;
 }
 
-/* кнопка */
 .h2Creativity button{
     font-family: 'Geologica';
     font-weight: 400;
@@ -530,6 +523,7 @@ border: none;
   .text-mobile{
     display: block;
   }
+
 }
  
  
@@ -739,7 +733,9 @@ button{
   background-image: url(imgs/fonMain2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 22px;
+  border-radius: clamp(5px, 1.15vw, 22px);
+  max-width: 1920px;
+  min-width: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -816,26 +812,20 @@ button{
     min-width: 360px;
     max-width: 1920px;
     border-radius: 22px;
-    margin-top: 12px;
-    background-color: red;
+    margin-top: 12px; 
 }
 
-/* LEFT + RIGHT */
 .left-kartina{
-    width: clamp(260px, 69.3%, 1330px);
-    background-color: blue;
+    width: clamp(260px, 69.3%, 1330px); 
     display: flex;
     border-radius: 22px 0 0 22px;
 }
 
 .right-kartina{
     width: clamp(140px, 30.7%, 590px);
-    border-radius: 0 22px 22px 0;
-    background-color: #644735;
+    border-radius: 0 22px 22px 0; 
     height: 100%;
 }
-
-/* LEFT BIG */
 .left-big-kartina{
     width: clamp(180px, 58%, 770px);
     height: 100%;
@@ -859,24 +849,19 @@ button{
     background-repeat: no-repeat;
 }
 
-/* LEFT SMALL */
 .left-small-kartina{
     width: clamp(140px, 42%, 560px);
     height: 100%;
-    border-radius: 22px 0 0 22px;
-    background-color: violet;
+    border-radius: 22px 0 0 22px; 
 }
 
-/* RIGHT TOP */
 .right-top{
     height: clamp(220px, 64%, 750px);
     width: 100%;
-    border-radius: 0 22px 0 0;
-    background-color: yellow;
+    border-radius: 0 22px 0 0; 
     display: flex;
 }
-
-/* TOP BLOCK */
+ 
 .top1-kartina{
     height: 100%;
     width: 50%;
@@ -885,8 +870,7 @@ button{
     align-items: end;
     justify-content: end;
 }
-
-/* BOTTOM */
+ 
 .bottom-text{
     background-color: #EBEDF1;
     height: 36%;
@@ -895,9 +879,7 @@ button{
     align-items: end;
     justify-content: start;
     padding: clamp(10px, 1.5vw, 20px);
-}
-
-/* LEFT SMALL BLOCKS */
+} 
 .left-small-kartina div:last-child{
     background:
       linear-gradient(
@@ -911,8 +893,7 @@ button{
       url(imgs/kartina2.png);
 
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 0 22px 0 0;
+    background-repeat: no-repeat; 
 }
 
 .left-small-kartina div:nth-child(2){
@@ -960,8 +941,7 @@ background:
 
     background-size: cover;
     background-repeat: no-repeat; 
-}
-/* TEXT BLOCKS */
+} 
 .smal1-kartina{
     width: 100%;
     height: 37.9%;
@@ -970,8 +950,7 @@ background:
     justify-content: end;
     padding: 15px;
 }
-
-/* H2 BLOCK */
+ 
 .h2-kartina{
     width: 100%;
     height: 24.099%;
@@ -982,8 +961,7 @@ background:
     background-color: #344163;
     padding: 15px;
 }
-
-/* TEXT CONTAINER */
+ 
 .bottom-text section{
     height: 95%;
     width: clamp(220px, 22vw, 401px);
@@ -993,8 +971,7 @@ background:
     justify-content: space-between;
     align-items: start;
 }
-
-/* ================= TEXT ================= */
+ 
 
 .h2-kartina h3{
     font-size: clamp(24px, 4vw, 74px);
@@ -1019,14 +996,13 @@ background:
 
 .bottom-text button{
     height: clamp(26px, 3.5vw, 65px);
-    width: clamp(181px, 16vw, 304px);
-    background-color: #273E91;
+    width: clamp(181px, 16vw, 304px); 
     color: #FFFFFF;
     border: none;
     font-size: clamp(12px, 1.7vw, 24px);
+    background-color: #273E91;
 }
-
-/* SMALL CARDS TEXT */
+ 
 .smal1-kartina p{
     font-size: clamp(11px, 0.8vw, 14px);
     font-weight: 400;
@@ -1113,6 +1089,7 @@ background:
     .bottom-text{
         width: 100%;
         aspect-ratio: 375/146;
+        border-radius: 0 0 10px 10px;
     }
     .bottom-text section{
         display: flex;
@@ -1125,7 +1102,132 @@ background:
     }
     
 .bottom-text p{
-    width: clamp(90%, 95vw, 100%);
-    font-size: clamp(12px, 2vw, 40px);
+    width: clamp(85%, 60vw, 100%);
+    font-size: clamp(12px, 3.2vw, 40px);
 }
+.h2-kartina h3,
+.h2-kartina p{
+    width: 100%; 
+}
+.h2-kartina{
+    padding: 10px;
+}
+}
+
+.Museum-Section {
+    min-width: 360px;
+    max-width: 1920px;
+    width: 100%;
+    height: clamp(499px, 55.9vw, 1073px); /* 375px: 499px | 1920px: 1073px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(168, 163, 156, 0.4) 0%,
+        rgba(168, 163, 156, 0.35) 15%,
+        rgba(158, 155, 149, 0.30) 40%,
+        rgba(116, 114, 111, 0.25) 70%,
+        transparent 100%
+    ),
+    url(imgs/MuseumSection.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: clamp(5px, 1.15vw, 22px);
+    margin-bottom: 2%;
+}
+
+.h2MuseumMain {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: clamp(246px, 40.5vw, 778px); /* 375px: 246px | 1920px: 778px */
+    background: rgba(181, 134, 65, 0.3);
+    backdrop-filter: blur(10px);
+    border-right: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+}
+
+.h2Museum {
+    width: clamp(221px, 37.2vw, 715px); /* 375px: 221px | 1920px: 715px */
+    height: clamp(345px, 37.5vw, 720px);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h2-museum {
+    width: clamp(200px, 32.1vw, 617px); /* 375px: 200px | 1920px: 617px */
+    height: clamp(83px, 12.8vw, 246px); /* 375px: 83px | 1920px: 246px */
+    border-bottom: 0.5px solid #FFFFFF;
+}
+
+.h2-museum h2 {
+    font-size: clamp(24px, 3.85vw, 74px); /* 375px: 24px | 1920px: 74px */
+    font-weight: 400;
+    font-family: "Geologica";
+    line-height: 93.6%;
+    color: #FFFFFF;
+}
+
+.museumLocation {
+    font-size: clamp(9px, 0.83vw, 16px); /* 375px: 9px | 1920px: 16px */
+    font-weight: 400;
+    font-family: "Geologica";
+    color: #FFFFFF;
+    width: clamp(140px, 14.5vw, 278px); /* 375px: 140px | 1920px: 278px */
+    height: clamp(20px, 2.08vw, 40px); /* 375px: 20px | 1920px: 40px */
+    justify-content: space-between;
+    display: flex;
+}
+
+.museumLocation img {
+    height: clamp(14px, 1.46vw, 28px); /* 375px: 14px | 1920px: 28px */
+    width: clamp(14px, 1.46vw, 28px); /* 375px: 14px | 1920px: 28px */
+}
+
+.museumP {
+    height: clamp(179px, 17.8vw, 342px); /* 375px: 179px | 1920px: 342px */
+    width: clamp(171px, 29.2vw, 561px); /* 375px: 171px | 1920px: 561px */
+    font-family: 'Geologica';
+    font-size: clamp(12px, 1.56vw, 30px); /* 375px: 12px | 1920px: 30px */
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.but-hr {
+    width: 100%;
+    height: clamp(26px, 3.39vw, 65px); /* 375px: 26px | 1920px: 65px */
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.but-hr div {
+    width: clamp(201px, 30.8vw, 592px); /* 375px: 201px | 1920px: 592px */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.but-hr button {
+    font-family: 'Geologica';
+    font-weight: 400;
+    background-color: #273E91;
+    color: #FFFFFF;
+    border: none;
+    width: clamp(154px, 18.5vw, 355px); /* 375px: 154px | 1920px: 355px */
+    height: clamp(26px, 3.39vw, 65px); /* 375px: 26px | 1920px: 65px */
+    font-size: clamp(11px, 1.25vw, 24px); /* 375px: 11px | 1920px: 24px */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.but-hr hr {
+    width: clamp(41px, 9.5vw, 183px); /* 375px: 41px | 1920px: 183px */
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
 }

@@ -51,7 +51,7 @@ font-family: 'Geologica';
    z-index: 100;
    width: 85%;
    left: 7.5%;
-  bottom: clamp(150px, 20.2083vw, 388px); /*тоже уменшай на мобиле*/
+  bottom: clamp(150px, 20.2083vw, 388px); 
    display: flex;
    justify-content: space-between;
    height: fit-content; 

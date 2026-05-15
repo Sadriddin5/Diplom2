@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+ 
 import './App.css'
 import { Link } from 'react-router-dom'
 function App() {
@@ -35,8 +33,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
           <Link to="/merch" onClick={closeMenu}>Мерч</Link>
           <Link to="/bio" onClick={closeMenu}>Биография</Link>
           <Link to="/coll" onClick={closeMenu}>Коллекция</Link>
-          <Link to="/mus" onClick={closeMenu}>Музей</Link>
-          <Link to="/events" onClick={closeMenu}>События</Link>
+          <Link to="/mus" onClick={closeMenu}>Музей</Link> 
           <Link to="/kont" onClick={closeMenu}>Контакты</Link>
         </div>
             </div>
