@@ -31,14 +31,28 @@
     font-size: clamp(20px, 3.24vw, 48px);
     line-height: 93%;
 }
-
+.MergeHeader{
+       opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.MergeHeader.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 .contactMain {
     width: 100%;
     border-top: 1px solid rgba(195, 185, 172, 1);
     max-width: 1920px;
     min-width: none;
+      opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
-
+.contactMain.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 .contBottom {
     padding-bottom: 2%;
     margin-bottom: 2%;

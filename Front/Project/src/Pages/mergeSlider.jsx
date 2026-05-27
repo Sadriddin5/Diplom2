@@ -39,12 +39,10 @@ import { Pagination, Navigation } from 'swiper/modules';
                         Мерч
                     </h2>
                     <p>
-                       Vulputate eget, arcu. In enim justo, 
-                       rhoncus ut, imperdiet a, venenatis vitae,
-                        justo. Nullam dictum felis eu pede mollis 
-                        pretium. Integer tincidunt. Cras dapibus. 
-                        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+                     Теперь картины Олега Мелехова станут ближе: <br />
+мы запустили линейку коллекционных карт 
+с оцифрованными работами художника, которые смогут радовать вашу душу яркими 
+и жизнерадостными тонами.
                     </p>
                     <button>Узнать больше </button>
                 </div>

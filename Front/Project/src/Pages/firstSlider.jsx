@@ -1,44 +1,65 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import right from './imgs/left.png'
-import left from './imgs/right.png'
-import img1 from './imgs/fonMain1.png'
+import right from './imgs/left.png';
+import left from './imgs/right.png';
 import 'swiper/css/effect-coverflow';
 import { EffectCoverflow } from 'swiper/modules';
+import axios from 'axios';
 import './firstSlid.css';
  
-const slides = [
-  {
-    img: img1,
-    year: '1989 год',
-    title: 'Розовый Вечер',
-    desc: 'Холст, масло, 100 × 200 см'
-  },
-  {
-    img: img1,
-    year: '2021 год',
-    title: 'Название картины 2',
-    desc: 'Акварель, бумага'
-  },
-  {
-    img: img1,
-    year: '2022 год',
-    title: 'Название картины 3',
-    desc: 'Смешанная техника'
-  },
-  {
-    img: img1,
-    year: '2001 год',
-    title: 'Название картины',
-    desc: 'Холст, масло, 100 х 200 см'
-  }
+const SELECTED_TITLES = [
+  'Вид на Светлогорск от гостиницы "Русь"',
+  'Гимн Светлогорску',
+  'Драконы Балтийского моря. Шторм',
+  'Танец со зверем',
+  'Вилла Рамибе',
+  'Светлогорск Кофе "Вика"',
+  'Светлогорск. Полдень',
+  'Свет. Тени. И окно в небо. ',
+  'Балтийский берег. Вечерний бриз',
+  'Ночь, огни фонарей'
 ];
 
+const API_URL = 'http://82.97.252.48/api/artworks/artworks/';
+
 export default function FirstSlider() {
+  const [slides, setSlides] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
-  const currentSlide = slides[activeIndex];
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const swiperRef = useRef(null);
+ 
+  useEffect(() => {
+    const loadSlides = async () => {
+      try {
+        setLoading(true);
+        const res = await axios.get(API_URL);
+        const allWorks = res.data;
+
+        const filteredSlides = SELECTED_TITLES
+          .map(title => allWorks.find(work => work.title === title))
+          .filter(work => work !== undefined)  
+          .map(work => ({
+            img: work.image_url,
+            year: work.year ? `${work.year} год` : '',
+            title: work.title,
+            desc: work.technique || '' 
+          }));
+
+        setSlides(filteredSlides);
+      } catch (e) {
+        console.error('Ошибка загрузки слайдов:', e);
+        setError('Ошибка загрузки данных');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadSlides();
+  }, []);
+
+  const currentSlide = slides[activeIndex] || {};
 
   const handlePrev = () => {
     if (swiperRef.current) {
@@ -51,6 +72,18 @@ export default function FirstSlider() {
       swiperRef.current.slideNext();
     }
   };
+
+  if (loading) {
+    return (
+      <div className="first-slider-loading">
+        <div className="first-slider-spinner"></div>
+        <p>Загрузка слайдов...</p>
+      </div>
+    );
+  }
+  
+  if (error) return <div>{error}</div>;
+  if (slides.length === 0) return <div>Нет данных для отображения</div>;
 
   return (
     <div style={{ position: 'relative' }} className='Slider1Relative'>
@@ -68,11 +101,12 @@ export default function FirstSlider() {
         slidesPerView={1}
         centeredSlides={true}
         speed={800}
+        loop={true}
+        loopAdditionalSlides={2}
         className="firstSlider"
-        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
-          console.log('Swiper initialized:', swiper); // Проверка в консоли
         }}
         initialSlide={0}
       >

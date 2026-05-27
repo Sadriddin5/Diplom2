@@ -10,56 +10,59 @@
 }
 
 .CreativitySec hr {
-    border: 1px solid #C3B9AC;
+    border: 0.7px solid #C3B9AC;
     margin-bottom: 4%;
 }
 
 .obzorCreat {
-    width: clamp(325px, 78vw, 1480px);
-    height: clamp(144px, 21vw, 403px);
+    border-bottom: 1px solid #C3B9AC;
+    width: clamp(325px, 78vw, 1250px); 
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: start;
     margin: 0 auto;
-    border-bottom: 1px solid #C3B9AC;
 
     gap: clamp(10px, 2vw, 20px);
+    padding-bottom: 5%;
+    margin-bottom: 3%;
 }
 
-.obzorCreat hr {
-    height: clamp(131px, 17.8vw, 341px);
-    border: 1px solid #C3B9AC;
+ @media(max-width:768px){
+    
+.obzorCreat {
+    border-bottom: 0;
 }
-
+ }
 .obzorMain {
-    width: clamp(310px, 65vw, 1234px);
-   height: clamp(123px, 17.2vw, 331px);
+    width: clamp(315px, 70vw, 1250px); 
 }
 
 .obzorCreat p {
-    font-family: 'ForumFont';
-    font-size: clamp(11px, 1.6vw, 30px);
+    font-family: 'Geologica';
+    font-size: clamp(12px, 1.6vw, 30px);
     color: #3B3534;
+    font-weight: 300;
 }
 
 .obzorCreat h1 {
-    font-family: 'Geologica';
-    font-size: clamp(27px, 3.3vw, 64px);
+    font-family: 'Geologica'; 
+    font-size: clamp(20px, 3.3vw, 64px);
     line-height: 140%;
+    font-weight: 600;
+    width: 100%;
     color: #B58641;
 }
 
 .obzor {
     align-items: end;
-    justify-content: center;  
-    height: clamp(144px, 21vw, 373px);
+    justify-content: center;   
 }
 
-@media(max-width:1519px){
+/* @media(max-width:1519px){
 .obzorCreat{
     margin-bottom: 3.5%;
 }
-}
+} */
 .evolut{
     height: clamp(79px, 13vw, 250px);
    width: clamp(325px, 80vw, 1480px);
@@ -68,6 +71,7 @@
     margin: 0 auto;
     align-items: center;
     justify-content: start;
+    border-bottom: 1px solid #C3B9AC;
 }
 .evolut p{
         font-family: "Geologica", sans-serif;
@@ -75,11 +79,13 @@
    width: 100%;
    line-height: 72%;
 
-   font-size: clamp(43px, 6.78vw, 90px);
+   font-size: clamp(24px, 5vw, 90px);
     color: #344163;
 
    
 }
+
+
 
 
 
@@ -183,7 +189,7 @@ border-bottom: 1px solid #C3B9AC;
    width: 100%;
    line-height: 72%;
 
-   font-size: clamp(43px, 6.78vw, 90px);
+   font-size: clamp(24px, 5vw, 90px);
     color: #344163;
 
 }
@@ -490,4 +496,14 @@ color: #ffffff;
 color: #644735;
 border: 1px solid #644735;
 background-color: #ffffff;
+}
+.tvorchestvo-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.tvorchestvo-container.show {
+    opacity: 1;
+    transform: translateY(0);
 }

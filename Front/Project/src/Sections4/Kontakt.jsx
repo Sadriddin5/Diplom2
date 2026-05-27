@@ -3,10 +3,18 @@ import './kontakt.css'
 import card from './img/CardImg.png'
 import call from './img/Call.png'
 import mess from './img/mess.png'
-import { useState } from 'react'
 import axios from 'axios'
+import { useEffect, useState } from 'react'
+
 
 export default function Kontakt(){
+    const [isVisible, setIsVisible] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsVisible(true)
+        }, 50)
+    }, [])
 
     const maxLength = 500 
  
@@ -68,12 +76,12 @@ export default function Kontakt(){
 
     return(
         <>
-        <div className="Collectionh2">
+        <div className={`Collectionh2 MergeHHeader ${isVisible ? 'show' : ''}`} >
             <h2>Контакты</h2>
             <p>Свяжитесь с нами по любым вопросам</p>
         </div>
 
-        <section className='contactMain'>
+        <section className={`contactMain ${isVisible ? 'show' : ''}`}>
             <div className="contTop">
                 <div className="contThemes">
                     <p>Темы: </p>

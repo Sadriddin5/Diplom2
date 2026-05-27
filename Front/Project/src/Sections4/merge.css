@@ -36,10 +36,13 @@ height: clamp(75px, 18vw, 342px);
     width: 100%;
     color: #282424;
 }
+hr{
+    border: 1px solid #C3B9AC;
+}
 
 .filtresMain { 
     margin: 0 auto;
-
+    
     width: clamp(325px, 80vw, 1480px);
     max-width: 1480px;
     display: flex;
@@ -49,7 +52,6 @@ height: clamp(75px, 18vw, 342px);
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     height: auto;
-    background-color: blue;
 }
 
 .filtres {
@@ -121,24 +123,19 @@ height: clamp(75px, 18vw, 342px);
 }
 
 .worksFounded {
-    width: 100%;    
+    width: 100%;
     max-width: 1480px;
     margin: 0 auto;
-    padding: 0 16px; 
-    height: fit-content;
+    padding: 0 16px;
 }
 .worksFounded p{
     font-family: "Geologica";
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: clamp(8px, 1.7vw,24px);
-    margin: 0 auto;
-    width: clamp(325px, 80vw, 1480px);
     
 }
 .worksFoundedP {
     
-    width: clamp(325px, 78vw, 1480px); 
+    width: clamp(325px, 80vw, 1480px);
+    min-height: 48px;
     height: auto;
     display: flex;
     align-items: center;
@@ -165,7 +162,6 @@ height: clamp(75px, 18vw, 342px);
     border-radius: 5px;
     overflow: hidden;
     display: flex;
-    background-color: #FFFFFF;
     flex-direction: column;
 }
 
@@ -177,7 +173,7 @@ height: clamp(75px, 18vw, 342px);
 }
 
 .work h1 {
-    font-size: clamp(10px, 2vw, 32px);
+    font-size: clamp(10px, 2vw, 36px);
     color: #282424;
     font-family: 'Geologica';
     font-weight: 300;
@@ -287,30 +283,27 @@ height: clamp(75px, 18vw, 342px);
         font-size: clamp(8px, 2.5vw, 10px);
     }
 }
-/* Добавьте это в конец вашего файла galery.css */
-
-/* Стили для анимации загрузки */
-.loading-container {
+.merge-loading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    min-height: 400px;
     width: 100%;
+    background-color: #FFFFFF;
 }
 
-.spinner {
-    width: 60px;
-    height: 60px;
-    border: 4px solid rgba(195, 185, 172, 0.3);
+.merge-spinner {
+    width: 70px;
+    height: 70px;
+    border: 4px solid rgba(52, 65, 99, 0.2);
     border-top: 4px solid #344163;
-    border-right: 4px solid #344163;
+    border-right: 4px solid #C3B9AC;
     border-radius: 50%;
-    animation: spin 0.8s linear infinite;
+    animation: mergeSpin 0.9s linear infinite;
 }
 
-@keyframes spin {
+@keyframes mergeSpin {
     0% {
         transform: rotate(0deg);
     }
@@ -319,44 +312,44 @@ height: clamp(75px, 18vw, 342px);
     }
 }
 
-.loading-container p {
-    margin-top: 20px;
+.merge-loading p {
+    margin-top: 25px;
     font-size: clamp(14px, 4vw, 24px);
     font-family: 'Geologica';
     color: #344163;
-    animation: pulse 1.5s ease-in-out infinite;
+    animation: mergePulse 1.2s ease-in-out infinite;
 }
 
-@keyframes pulse {
+@keyframes mergePulse {
     0%, 100% {
         opacity: 1;
     }
     50% {
-        opacity: 0.5;
+        opacity: 0.6;
     }
 }
- 
-.work {
+
+/* Анимация появления карточек */
+.works .work {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 0.5s ease forwards;
+    animation: workFadeIn 0.5s ease forwards;
 }
 
-/* Задержка анимации для каждой карточки */
-.work:nth-child(1) { animation-delay: 0.05s; }
-.work:nth-child(2) { animation-delay: 0.1s; }
-.work:nth-child(3) { animation-delay: 0.15s; }
-.work:nth-child(4) { animation-delay: 0.2s; }
-.work:nth-child(5) { animation-delay: 0.25s; }
-.work:nth-child(6) { animation-delay: 0.3s; }
-.work:nth-child(7) { animation-delay: 0.35s; }
-.work:nth-child(8) { animation-delay: 0.4s; }
-.work:nth-child(9) { animation-delay: 0.45s; }
-.work:nth-child(10) { animation-delay: 0.5s; }
-.work:nth-child(11) { animation-delay: 0.55s; }
-.work:nth-child(12) { animation-delay: 0.6s; }
+.works .work:nth-child(1) { animation-delay: 0.05s; }
+.works .work:nth-child(2) { animation-delay: 0.1s; }
+.works .work:nth-child(3) { animation-delay: 0.15s; }
+.works .work:nth-child(4) { animation-delay: 0.2s; }
+.works .work:nth-child(5) { animation-delay: 0.25s; }
+.works .work:nth-child(6) { animation-delay: 0.3s; }
+.works .work:nth-child(7) { animation-delay: 0.35s; }
+.works .work:nth-child(8) { animation-delay: 0.4s; }
+.works .work:nth-child(9) { animation-delay: 0.45s; }
+.works .work:nth-child(10) { animation-delay: 0.5s; }
+.works .work:nth-child(11) { animation-delay: 0.55s; }
+.works .work:nth-child(12) { animation-delay: 0.6s; }
 
-@keyframes fadeInUp {
+@keyframes workFadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -366,42 +359,31 @@ height: clamp(75px, 18vw, 342px);
         transform: translateY(0);
     }
 }
- 
+
+/* Hover эффект для карточек */
+.work {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .work:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
 }
- 
+
 .work img {
     transition: transform 0.3s ease;
 }
 
 .work:hover img {
-    transform: scale(1.05);
-}
- 
-.filtr1 select,
-.sorts button,
-.sorts select {
-    transition: all 0.3s ease;
+    transform: scale(1.02);
 }
 
-.filtr1 select:hover,
-.sorts button:hover,
-.sorts select:hover {
-    border-color: #344163;
-    transform: translateY(-2px);
-}
-
-.sorts button:active {
-    transform: translateY(0);
-} 
+/* Анимация для счетчика */
 .worksFounded p {
-    animation: slideIn 0.5s ease;
+    animation: counterFade 0.5s ease;
 }
 
-@keyframes slideIn {
+@keyframes counterFade {
     from {
         opacity: 0;
         transform: translateX(-20px);
@@ -410,81 +392,4 @@ height: clamp(75px, 18vw, 342px);
         opacity: 1;
         transform: translateX(0);
     }
-} 
-.spinner-double {
-    position: relative;
-    width: 80px;
-    height: 80px;
-}
-
-.spinner-double::before,
-.spinner-double::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    animation: spinDouble 1.5s ease-in-out infinite;
-}
-
-.spinner-double::before {
-    width: 100%;
-    height: 100%;
-    border: 4px solid rgba(52, 65, 99, 0.2);
-    border-top: 4px solid #344163;
-}
-
-.spinner-double::after {
-    width: 60%;
-    height: 60%;
-    top: 20%;
-    left: 20%;
-    border: 4px solid rgba(195, 185, 172, 0.2);
-    border-bottom: 4px solid #C3B9AC;
-    animation-delay: 0.5s;
-}
-
-@keyframes spinDouble {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
- 
-.works {
-    animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-} 
-.work img {
-    background: linear-gradient(
-        90deg,
-        #F6EEDC 0%,
-        #e8e0d0 50%,
-        #F6EEDC 100%
-    );
-    background-size: 200% 100%;
-    animation: shimmer 1.5s infinite;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -200% 0;
-    }
-    100% {
-        background-position: 200% 0;
-    }
-}
-
-/* Убираем skeleton эффект после загрузки изображения */
-.work img[src] {
-    background: none;
-    animation: none;
 }

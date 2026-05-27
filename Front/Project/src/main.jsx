@@ -13,6 +13,8 @@ import Tvor from './Sections4/tvorchestvo.jsx'
 import Coll from './Sections4/Collection.jsx' 
 import Mus from './Sections4/Museum.jsx'
 import Kont from './Sections4/Kontakt.jsx'
+import merge from './Sections4/merge.jsx'
+import Merge from './Sections4/merge.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,6 +28,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/coll" element={<Coll/>} />
         <Route path="/mus" element={<Mus/>} />
         <Route path="/kont" element={<Kont/>} />
+        <Route path="/merge" element={<Merge/>} />
       </Routes>
       <Fut/>
     </BrowserRouter>

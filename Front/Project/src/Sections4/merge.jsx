@@ -1,8 +1,8 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import axios from 'axios';
-import './galery.css';
+import './merge.css';
 
-export default function Galery() {
+export default function Merge() {
 
     const [allWorks, setAllWorks] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -95,12 +95,11 @@ export default function Galery() {
  
 
     if (loading) return (
-        <div className="loading-container">
-            <div className="spinner"></div>
-            <p>Загрузка галереи...</p>
+        <div className="merge-loading">
+            <div className="merge-spinner"></div>
+            <p>Загрузка Мерч...</p>
         </div>
     );
-    
     if (error) return <div>{error}</div>;
  
     return (
@@ -108,7 +107,7 @@ export default function Galery() {
             <div className="Collectionh2">
                 <h2>Виртуальная галерея</h2>
                 <p>Интерактивная экспозиция работ</p>
-            </div> 
+            </div>
             <hr />
             <div className="filtresMain">
                 <div className="filtres">

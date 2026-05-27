@@ -105,21 +105,22 @@ export default function Home() {
                       <h2>Творчество</h2>
                     <hr />
                   </div>
-                        <p  >
-                        Vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet 
-                        a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 
-                        pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper 
-                        nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-                        porttitor eu, consequat vitae, eleifend ac, enim. <span>Aliquam 
-                        lorem ante, dapibus in, viverra quis.</span>
-
-    </p>
+                        <p  >На протяжении всей сознательной жизни Олег Мелехов стремился к искусству.
+                             Он брал вдохновение ото всюду: в городских пейзажах, в исторических фигурах, 
+                             в своих чувствах и близких людях. Он впитывал знания, которыми делились более 
+                             опытные художники, искал свой стиль. Он стал основателем стиля "Искусство Глёз" - 
+                             искусства сияющей любви, и он посвятил в это искусство своих учеников.
+                             </p>
          
                         <button>Побробнее </button>
                      
                 </div>
                  </div>
                  
+               </div>
+               <div className="h2-kartina NameCreativity">
+                <h3>2007 год</h3>
+                            <p>Закат</p>
                </div>
                  
             </section>
@@ -168,14 +169,12 @@ export default function Home() {
                         <p>г. Город, ул. Улица. д. 1, кв. 2 <br /> Мulputate eget, arcu.</p>
                     </div>
                 </div>
-                        <p  className='museumP'>
-                      Lorem ipsum dolor sit amet, consectetuer 
-                      adipiscing elit. Aenean commodo ligula eget
-                       dolor. Aenean massa. Cum sociis natoque penatibu
-                       s et magnis dis parturient montes, nascetur ridiculus 
-                       mus. Donec quam felis, ultricies nec, pellentesque eu, 
-                      pretium quis, sem. Nulla consequat massa quis enim. 
-                      Donec pede justo.
+                        <p  className='museumP'>Это пространство, где будут 
+                            жить только оригиналы заслуженного художника РФ Олега 
+                            Мелехова. Ничего лишнего — только холсты, кисть и авторский 
+                            взгляд. По задумке музей будет в Светлогорске, но точные даты 
+                            создания пока не известны. 
+                            Следите за новостями на нашем сайте, чтобы узнать подробности.
 
     </p>
      <div className="but-hr">

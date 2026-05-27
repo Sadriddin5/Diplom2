@@ -111,3 +111,123 @@ justify-content: space-between;
     color: rgba(59, 53, 52, 1);
 
 }
+.museum-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.museum-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.museum-container .Collectionh2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    transition-delay: 0.05s;
+}
+
+.museum-container.show .Collectionh2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.museum-container .concept {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    transition-delay: 0.1s;
+}
+
+.museum-container.show .concept {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.museum-container .concept2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    transition-delay: 0.15s;
+}
+
+.museum-container.show .concept2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.museum-container .MuseumH2 h1,
+.museum-container .MuseumH2 p,
+.museum-container .concept2H2 h1,
+.museum-container .museumButton .textAndBut p,
+.museum-container .museumButton button {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.museum-container.show .MuseumH2 h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.15s;
+}
+
+.museum-container.show .MuseumH2 p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.museum-container.show .concept2H2 h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.museum-container.show .museumButton .textAndBut p:first-of-type {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.25s;
+}
+
+.museum-container.show .museumButton .textAndBut p:last-of-type {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.museum-container.show .museumButton button {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.35s;
+}
+
+.museum-container .Museumimg1,
+.museum-container .museumButton section {
+    opacity: 0;
+    transform: scale(0.98);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.museum-container.show .Museumimg1 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.1s;
+}
+
+.museum-container.show .museumButton section {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.2s;
+}
+
+.museumButton button {
+    transition: all 0.3s ease;
+}
+
+.museumButton button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

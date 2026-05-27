@@ -5,7 +5,6 @@
 }
 .galery{
 width: 100%;
-   background-color: #F6EEDC; 
 
      max-width: 1920px;
     min-width: 375px;
@@ -41,71 +40,8 @@ padding-left: 8%;
     width: clamp(119px, 30vw, 400px);
     margin-right: 0;
 }
-.slid1{
-    width: 100%;
-    max-height: 564px;
-    min-height: 170px;
-    height: 35.25rem;
-    margin-top: clamp(-125px, -8vw, -60px);
-    background: #F6EEDC;
-    border-top: 2px solid #C3B9AC;
-    border-bottom: 2px solid #C3B9AC;
-    padding-top: 30px ;
-    padding-bottom: 5px;
-    position: relative;
-    background-color: orange;
-}
 
-.sliderBlock{
-    margin-top: 10px;
-    background-color: transparent;
-position:absolute ;
-  margin-top: 60px;
-width: 100%;
-height: 443px;
-max-width: 1920px;
-min-width: 375px;
-min-height: 150px;
 
-}
-.sliderButs{
- width: 136px;
-    height: 41px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    right: 10%; 
-    background-color: #344163;
-}
-.sliderButs hr{
-    height: 100%;
-    border: 1px solid #C3B9AC;
-    visibility: visible;
-}
-
-/**      SLIDER ***/
-
-.mySwiper {
-  width: 100%;
-  height: 100%;
-  z-index: 20 !important;
-}
-
-.swiper-slide {
-  text-align: center;
-  background: #ADA99C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-}
 
 @media (max-width: 480px) {
 .baner1{
@@ -419,13 +355,30 @@ justify-content: space-between;
     align-items: center;
     justify-content: center;
 
-    background-image: url(imgs/baltiyskiy.png);
+    background:
+      linear-gradient(
+        to top,
+        rgba(52, 65, 99, 0.85) 0%,
+        rgba(52, 65, 99, 0.6) 30%,
+        rgba(52, 65, 99, 0.3) 55%,
+        rgba(52, 65, 99, 0.12) 75%,
+        rgba(52, 65, 99, 0.03) 100%
+      ),
+     url(imgs/baltiyskiy.png);
     background-size: cover;
+    position: relative;
     background-repeat: no-repeat;
   border-radius: clamp(5px, 1.15vw, 22px);
 }
+ .NameCreativity{
+    position: absolute;
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 30px;
+    padding-right: 30px;
 
-/* контейнер */
+ }
 .mainCreat{
     display: flex;
     height: 100%;
@@ -454,7 +407,7 @@ justify-content: space-between;
     justify-content: space-between;
     align-items: flex-start; 
     width: clamp(228px, 35vw, 571px);
-    height: clamp(250px, 38vw, 596px);
+    height: clamp(250px, 38vw, 710px);
 }
 .h2Creativity h2{
     font-family: 'Geologica';
@@ -878,7 +831,7 @@ button{
     display: flex;
     align-items: end;
     justify-content: start;
-    padding: clamp(10px, 1.5vw, 20px);
+    padding: clamp(10px, 1.5vw, 40px);
 } 
 .left-small-kartina div:last-child{
     background:
@@ -963,7 +916,7 @@ background:
 }
  
 .bottom-text section{
-    height: 95%;
+   height: 100%;
     width: clamp(220px, 22vw, 401px);
 
     display: flex;
@@ -1162,6 +1115,9 @@ background:
     width: clamp(200px, 32.1vw, 617px); /* 375px: 200px | 1920px: 617px */
     height: clamp(83px, 12.8vw, 246px); /* 375px: 83px | 1920px: 246px */
     border-bottom: 0.5px solid #FFFFFF;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .h2-museum h2 {
@@ -1189,10 +1145,10 @@ background:
 }
 
 .museumP {
-    height: clamp(179px, 17.8vw, 342px); /* 375px: 179px | 1920px: 342px */
-    width: clamp(171px, 29.2vw, 561px); /* 375px: 171px | 1920px: 561px */
+    height: clamp(179px, 17.8vw, 342px);  
+width: clamp(171px, 33.2vw, 623px);
     font-family: 'Geologica';
-    font-size: clamp(12px, 1.56vw, 30px); /* 375px: 12px | 1920px: 30px */
+    font-size: clamp(12px, 1.56vw, 30px);  
     font-weight: 400;
     color: #FFFFFF;
 }
